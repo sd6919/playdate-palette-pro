@@ -497,7 +497,7 @@ function Community() {
           </h2>
           <div className="lg:col-span-4 flex lg:justify-end">
             <a
-              href="https://discord.gg/Yf5pDTXW"
+              href="https://discord.gg/phYj8yzg68"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-coral px-6 py-3 text-sm font-medium text-primary-foreground hover:-translate-y-0.5 transition-transform"
@@ -545,7 +545,7 @@ function Footer() {
           <span className="eyebrow">Find us</span>
           <ul className="mt-3 space-y-2 text-sm">
             {[
-              ["Discord", "https://discord.gg/Yf5pDTXW"],
+              ["Discord", "https://discord.gg/phYj8yzg68"],
               ["Twitter / X", "https://twitter.com/MezumoGames"],
               ["TikTok", "https://www.tiktok.com/@mezumogames"],
               ["Steam - Ants in Space", "https://store.steampowered.com/app/2366290/Ants_in_Space/"],

@@ -214,7 +214,7 @@ function About() {
       <div className="grid gap-12 md:grid-cols-12">
         <div className="md:col-span-3 md:col-start-4">
           <p className="font-serif text-2xl leading-snug text-foreground italic">
-            “We left stable jobs to make games we'd want to play after work.”
+            {"\n"}
           </p>
         </div>
         <div className="md:col-span-5 space-y-5 text-base leading-relaxed text-muted-foreground">

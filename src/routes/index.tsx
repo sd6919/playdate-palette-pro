@@ -3,9 +3,11 @@ import { useEffect, useState } from "react";
 import heroAntAsset from "@/assets/hero-ants-in-space.png.asset.json";
 import gameArtAsset from "@/assets/ants-in-space-banner.png.asset.json";
 import teamPhotoAsset from "@/assets/team.png.asset.json";
+import mezumoLogoAsset from "@/assets/mezumo-logo.png.asset.json";
 const heroAnt = heroAntAsset.url;
 const gameArt = gameArtAsset.url;
 const teamPhoto = teamPhotoAsset.url;
+const mezumoLogo = mezumoLogoAsset.url;
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -37,15 +39,12 @@ const NAV = [
 
 function Logo({ className = "" }: { className?: string }) {
   return (
-    <a href="#top" className={`group inline-flex items-center gap-2 ${className}`}>
-      <svg viewBox="0 0 32 32" className="size-7" aria-hidden>
-        <path d="M3 22 L10 8 L13 14 L9 22 Z" fill="var(--coral)" />
-        <path d="M14 22 L21 8 L24 14 L20 22 Z" fill="var(--mint)" />
-        <circle cx="25.5" cy="18.5" r="3.5" fill="none" stroke="var(--sand)" strokeWidth="2" />
-      </svg>
-      <span className="font-display text-[1.05rem] font-semibold tracking-tight">
-        Mezumo
-      </span>
+    <a href="#top" className={`group inline-flex items-center ${className}`}>
+      <img
+        src={mezumoLogo}
+        alt="Mezumo"
+        className="h-7 w-auto object-contain"
+      />
     </a>
   );
 }

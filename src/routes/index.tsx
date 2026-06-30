@@ -109,7 +109,7 @@ function Hero() {
         {/* Eyebrow row */}
         <div className="mb-10 flex flex-wrap items-center justify-between gap-3 text-xs">
           <span className="eyebrow">KRAKÓW, PL</span>
-          <span className="eyebrow">Est. 2023 — We make it for fun</span>
+          <span className="eyebrow">EST. 2023 | WE MAKE IT FOR FUN</span>
         </div>
 
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-10">
@@ -221,7 +221,7 @@ function About() {
           <p>
             Mezumo is an independent game studio founded in 2023 in Kraków,
             Poland. We're three friends with eight years of trenches together at
-            Bloober Team — and a soft spot for strategy games that don't take
+            Bloober Team and a soft spot for strategy games that don't take
             themselves too seriously.
           </p>
           <p>
@@ -241,7 +241,7 @@ function Game() {
         <SectionHeader
           index="02"
           kicker="Now Playing"
-          title="Ants in Space — a roguelike strategy game."
+          title="Ants in Space. A roguelike strategy game."
         />
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-14">
           <div className="lg:col-span-7 order-2 lg:order-1">
@@ -264,7 +264,7 @@ function Game() {
             <p className="leading-relaxed text-muted-foreground">
               Fly through procedurally generated galaxies. Explore planets.
               Gather resources. <em className="font-serif text-foreground">Evolve</em>{" "}
-              your species in a quest to destroy the invaders — the asteroid-riding
+              your species in a quest to destroy the invaders, the asteroid-riding
               Termites.
             </p>
 
@@ -372,9 +372,9 @@ function Videos() {
 }
 
 const TEAM = [
-  { name: "Barbara Miklas", role: "3D & 2D Artist", years: "11y", shipped: "8" },
-  { name: "Paweł Niezabitowski", role: "Designer · Programmer", years: "13y", shipped: "8" },
-  { name: "Bartosz Stachura", role: "Level Designer · Scripter", years: "11y", shipped: "5" },
+  { name: "Barbara Miklas", role: "3D & 2D Artist", years: "11y", shipped: "8", label: "ARTIST" },
+  { name: "Paweł Niezabitowski", role: "Designer · Programmer", years: "13y", shipped: "8", label: "DEVELOPER" },
+  { name: "Bartosz Stachura", role: "Level Designer · Scripter", years: "11y", shipped: "5", label: "SCRIPTER" },
 ];
 
 function Team() {
@@ -407,7 +407,7 @@ function Team() {
             <li key={p.name} className="bg-background p-8 flex flex-col gap-4">
               <div className="flex items-baseline justify-between">
                 <span className="font-display text-xs text-coral">0{i + 1}</span>
-                <span className="eyebrow">Member</span>
+                <span className="eyebrow">{p.label}</span>
               </div>
               <h3 className="font-display text-2xl font-semibold tracking-tight text-coral">
                 {p.name}

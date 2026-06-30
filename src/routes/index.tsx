@@ -143,8 +143,8 @@ function Hero() {
             {/* Studio stats */}
             <dl className="mt-14 grid grid-cols-3 gap-6 border-t border-border pt-8 max-w-xl">
               <Stat n="3" label="People in the studio" />
-              <Stat n="32y" label="Combined experience" />
-              <Stat n="21" label="Shipped titles" />
+              <Stat n="+10y" label="Of experience" />
+              <Stat n="+10" label="Shipped titles" />
             </dl>
           </div>
 

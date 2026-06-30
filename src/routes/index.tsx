@@ -372,9 +372,9 @@ function Videos() {
 }
 
 const TEAM = [
-  { name: "Barbara Miklas", role: "3D & 2D Artist", years: "11y", shipped: "8", label: "ARTIST" },
-  { name: "Paweł Niezabitowski", role: "Designer · Programmer", years: "13y", shipped: "8", label: "DEVELOPER" },
-  { name: "Bartosz Stachura", role: "Level Designer · Scripter", years: "11y", shipped: "5", label: "SCRIPTER" },
+  { name: "Barbara Miklas", role: "3D & 2D Artist", years: "+10y", shipped: "8", label: "ARTIST" },
+  { name: "Paweł Niezabitowski", role: "Designer · Programmer", years: "+15y", shipped: "8", label: "DEVELOPER" },
+  { name: "Bartosz Stachura", role: "Level Designer · Scripter", years: "+10y", shipped: "5", label: "SCRIPTER" },
 ];
 
 function Team() {

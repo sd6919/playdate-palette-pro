@@ -448,19 +448,17 @@ function Consulting() {
     <section id="consulting" className="mx-auto max-w-[1320px] px-6 py-20 lg:px-10 lg:py-28">
       <SectionHeader
         index="05"
-        kicker="Services"
+        kicker="GAME CONSULTING"
         title="We also help other studios ship better games."
       />
       <div className="grid gap-12 md:grid-cols-12">
         <div className="md:col-span-5 space-y-5 text-muted-foreground leading-relaxed">
           <p>
-            With over three decades of combined experience in everything from
-            AAA horror to systemic strategy, we offer hands-on consulting for
-            indie teams and established studios alike.
+            Unlock Your Game's Potential with Mezumo.
           </p>
           <p>
-            We dig in where it matters: game design, development pipelines,
-            production, and go-to-market. Honest opinions only.
+            At Mezumo, we provide expert game consulting services to help developers turn their visions into reality. Whether you're an indie developer or an established studio, we tailor our insights to meet your unique needs, ensuring your game stands out in a competitive market.{"\u00a0"}
+            Partner with us, and let's create something extraordinary together.
           </p>
           <a
             href="#contact"

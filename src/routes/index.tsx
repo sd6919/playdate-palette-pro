@@ -470,9 +470,7 @@ function Consulting() {
         <ul className="md:col-span-7 grid gap-px bg-border rounded-2xl overflow-hidden border border-border">
           {[
             ["Game Design Reviews", "Mechanics, loops, balance, fun-finding."],
-            ["Production & Scoping", "Roadmaps, milestones, scope you can ship."],
             ["Prototype to Vertical Slice", "From concept to playable, with you."],
-            ["Launch & Community", "Steam, press, Discord, the whole rodeo."],
           ].map(([t, d]) => (
             <li key={t} className="bg-background p-6">
               <h3 className="font-display text-lg font-medium tracking-tight">{t}</h3>

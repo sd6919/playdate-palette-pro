@@ -545,7 +545,7 @@ function Footer() {
           <span className="eyebrow">Find us</span>
           <ul className="mt-3 space-y-2 text-sm">
             {[
-              ["Discord", "https://discord.gg/Yf5pDTXW"],
+              ["Discord", "https://discord.gg/phYj8yzg68"],
               ["Twitter / X", "https://twitter.com/MezumoGames"],
               ["TikTok", "https://www.tiktok.com/@mezumogames"],
               ["Steam - Ants in Space", "https://store.steampowered.com/app/2366290/Ants_in_Space/"],

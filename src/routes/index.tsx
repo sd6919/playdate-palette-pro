@@ -45,16 +45,13 @@ function Logo({ className = "" }: { className?: string }) {
       aria-label="Mezumo — home"
       className={`group inline-flex items-center gap-2 text-foreground ${className}`}
     >
-      <svg
-        viewBox="0 0 32 32"
+      <img
+        src={mezumoLogo}
+        alt=""
         aria-hidden="true"
-        className="h-6 w-6 shrink-0"
-      >
-        <polygon points="2,2 14,2 2,14" fill="currentColor" />
-        <line x1="6" y1="29" x2="29" y2="6" stroke="currentColor" strokeWidth="3" strokeLinecap="square" />
-        <circle cx="9" cy="23" r="3.2" fill="none" stroke="currentColor" strokeWidth="2.4" />
-        <circle cx="25" cy="10" r="3.2" fill="none" stroke="currentColor" strokeWidth="2.4" />
-      </svg>
+        className="h-7 w-auto shrink-0"
+      />
+
       <span className="font-display text-[1.05rem] font-bold uppercase tracking-[0.18em] leading-none">
         Mezumo
       </span>

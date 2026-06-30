@@ -548,7 +548,7 @@ function Footer() {
               ["Discord", "https://discord.gg/Yf5pDTXW"],
               ["Twitter / X", "https://twitter.com/MezumoGames"],
               ["TikTok", "https://www.tiktok.com/@mezumogames"],
-              ["Steam — Ants in Space", "https://store.steampowered.com/app/2366290/Ants_in_Space/"],
+              ["Steam - Ants in Space", "https://store.steampowered.com/app/2366290/Ants_in_Space/"],
             ].map(([label, href]) => (
               <li key={label}>
                 <a

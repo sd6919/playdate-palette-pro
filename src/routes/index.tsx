@@ -125,7 +125,10 @@ function Hero() {
 
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-10">
           <div className="lg:col-span-7">
-            <h1 className="font-display text-[clamp(2.6rem,7.5vw,6.25rem)] font-semibold leading-[0.95] tracking-[-0.035em] text-balance">
+            <h1
+              className="font-display text-[clamp(2.6rem,7.5vw,6.25rem)] font-semibold leading-[0.95] tracking-[-0.035em] text-balance text-coral"
+              style={{ textShadow: "0 0 28px oklch(0.72 0.21 18 / 0.35)" }}
+            >
               Our Game
             </h1>
             <p className="mt-8 max-w-[44ch] text-lg leading-relaxed text-muted-foreground text-pretty md:text-xl whitespace-pre-line">

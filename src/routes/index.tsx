@@ -161,7 +161,7 @@ function Hero() {
                 />
               </div>
               <figcaption className="mt-3 flex items-center justify-between text-xs text-muted-foreground">
-                <span className="eyebrow">Fig. 01 — Field Commander, Class A</span>
+                <span className="eyebrow">{"\n"}</span>
                 <span className="font-serif italic text-foreground/70">Mezumo, 2026</span>
               </figcaption>
             </figure>
@@ -397,8 +397,8 @@ function Team() {
             />
           </div>
           <figcaption className="mt-3 flex items-center justify-between text-xs text-muted-foreground">
-            <span className="eyebrow">Fig. 04 — The team, Kraków</span>
-            <span className="font-serif italic text-foreground/70">Left to right</span>
+            <span className="eyebrow">{"\n"}</span>
+            <span className="font-serif italic text-foreground/70">{"\n"}</span>
           </figcaption>
         </figure>
 

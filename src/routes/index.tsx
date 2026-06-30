@@ -108,7 +108,7 @@ function Hero() {
       <div className="mx-auto max-w-[1320px] px-6 pt-10 pb-20 lg:px-10 lg:pt-16 lg:pb-32">
         {/* Eyebrow row */}
         <div className="mb-10 flex flex-wrap items-center justify-between gap-3 text-xs">
-          <span className="eyebrow">Issue 01 · Kraków, PL</span>
+          <span className="eyebrow">KRAKÓW, PL</span>
           <span className="eyebrow">Est. 2023 — We make it for fun</span>
         </div>
 

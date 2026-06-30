@@ -383,47 +383,46 @@ function Team() {
           kicker="The Studio"
           title="Three people. One office in Kraków. A lot of coffee."
         />
-        <div className="grid gap-12 lg:grid-cols-12 lg:gap-14">
-          <figure className="lg:col-span-6">
-            <div className="overflow-hidden rounded-2xl border border-border">
-              <img
-                src={teamPhoto}
-                alt="The Mezumo team in their Kraków studio"
-                width={1408}
-                height={1600}
-                loading="lazy"
-                className="aspect-[4/5] w-full object-cover"
-              />
-            </div>
-            <figcaption className="mt-3 text-xs text-muted-foreground eyebrow">
-              The team — Mogilska 43, Kraków
-            </figcaption>
-          </figure>
 
-          <div className="lg:col-span-6 flex flex-col justify-center">
-            <ul className="divide-y divide-border border-y border-border">
-              {TEAM.map((p) => (
-                <li key={p.name} className="grid grid-cols-12 gap-4 py-6 items-baseline">
-                  <span className="col-span-12 md:col-span-5 font-display text-xl font-medium tracking-tight">
-                    {p.name}
-                  </span>
-                  <span className="col-span-7 md:col-span-4 text-sm text-muted-foreground">
-                    {p.role}
-                  </span>
-                  <span className="col-span-3 md:col-span-2 text-right font-display text-sm">
-                    {p.years}
-                  </span>
-                  <span className="col-span-2 md:col-span-1 text-right text-sm text-coral">
-                    {p.shipped}
-                  </span>
-                </li>
-              ))}
-            </ul>
-            <p className="mt-6 text-xs text-muted-foreground eyebrow">
-              Name · Role · Years · Shipped
-            </p>
+        <figure className="mb-14">
+          <div className="overflow-hidden rounded-2xl border border-border">
+            <img
+              src={teamPhoto}
+              alt="The Mezumo team — Barbara, Paweł and Bartosz"
+              loading="lazy"
+              className="aspect-[21/9] w-full object-cover object-center"
+            />
           </div>
-        </div>
+          <figcaption className="mt-3 flex items-center justify-between text-xs text-muted-foreground">
+            <span className="eyebrow">Fig. 04 — The team, Kraków</span>
+            <span className="font-serif italic text-foreground/70">Left to right</span>
+          </figcaption>
+        </figure>
+
+        <ul className="grid gap-px bg-border rounded-2xl overflow-hidden border border-border md:grid-cols-3">
+          {TEAM.map((p, i) => (
+            <li key={p.name} className="bg-background p-8 flex flex-col gap-4">
+              <div className="flex items-baseline justify-between">
+                <span className="font-display text-xs text-coral">0{i + 1}</span>
+                <span className="eyebrow">Member</span>
+              </div>
+              <h3 className="font-display text-2xl font-semibold tracking-tight text-coral">
+                {p.name}
+              </h3>
+              <p className="text-sm text-muted-foreground">{p.role}</p>
+              <dl className="mt-auto grid grid-cols-2 gap-4 border-t border-border pt-4">
+                <div>
+                  <dt className="eyebrow">Experience</dt>
+                  <dd className="mt-1 font-display text-lg text-foreground">{p.years}</dd>
+                </div>
+                <div>
+                  <dt className="eyebrow">Shipped</dt>
+                  <dd className="mt-1 font-display text-lg text-foreground">{p.shipped} titles</dd>
+                </div>
+              </dl>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );

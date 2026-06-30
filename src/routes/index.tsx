@@ -3,11 +3,12 @@ import { useEffect, useState } from "react";
 import heroAntAsset from "@/assets/hero-ants-in-space.png.asset.json";
 import gameArtAsset from "@/assets/ants-in-space-banner.png.asset.json";
 import teamPhotoAsset from "@/assets/team.png.asset.json";
-import mezumoLogoAsset from "@/assets/mezumo-logo.png.asset.json";
+import mezumoLogoAsset from "@/assets/mezumo-mark.png.asset.json";
 const heroAnt = heroAntAsset.url;
 const gameArt = gameArtAsset.url;
 const teamPhoto = teamPhotoAsset.url;
 const mezumoLogo = mezumoLogoAsset.url;
+
 
 export const Route = createFileRoute("/")({
   head: () => ({

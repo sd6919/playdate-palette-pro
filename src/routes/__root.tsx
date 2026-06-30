@@ -93,6 +93,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@MezumoGames" },
+      { name: "twitter:title", content: "Mezumo — We make games for fun" },
+      { name: "description", content: "Mezumo Play is a website showcasing indie games with a unique, playful aesthetic." },
+      { property: "og:description", content: "Mezumo Play is a website showcasing indie games with a unique, playful aesthetic." },
+      { name: "twitter:description", content: "Mezumo Play is a website showcasing indie games with a unique, playful aesthetic." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1eda06bf-2cf1-4904-8a53-f58dd6517a0d/id-preview-3ba73942--83768b6d-4646-47e5-a356-cf32b6fafcaf.lovable.app-1782823414508.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1eda06bf-2cf1-4904-8a53-f58dd6517a0d/id-preview-3ba73942--83768b6d-4646-47e5-a356-cf32b6fafcaf.lovable.app-1782823414508.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },

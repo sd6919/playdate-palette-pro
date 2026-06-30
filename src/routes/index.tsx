@@ -114,23 +114,14 @@ function Hero() {
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-10">
           <div className="lg:col-span-7">
             <h1 className="font-display text-[clamp(2.6rem,7.5vw,6.25rem)] font-semibold leading-[0.95] tracking-[-0.035em] text-balance">
-              Serious strategy.{" "}
-              <span className="italic font-serif text-coral">Hilarious</span> fun.
+              Our Game
             </h1>
             <p className="mt-8 max-w-[44ch] text-lg leading-relaxed text-muted-foreground text-pretty md:text-xl whitespace-pre-line">
               Ants in Space!
-
-
-              Lead your Space Ants tribe to conquer planets and save the universe from these damn termites! 
-
-
-              Ants in Space is a Roguelike Strategy game. 
-
-
-              Fly through generated galaxies, explore planets, gather resources, and EVOLVE your species in a quest to destroy the invaders: 
-
-
-              The asteroid-riding Termites. : Ants in Space.
+              Lead your Space Ants tribe to conquer planets and save the universe from these damn termites!
+              Ants in Space is a Roguelike Strategy game.
+              Fly through generated galaxies, explore planets, gather resources, and EVOLVE your species in a quest to destroy the invaders:
+              The asteroid-riding Termites.
             </p>
 
             <div className="mt-10 flex flex-wrap items-center gap-3">

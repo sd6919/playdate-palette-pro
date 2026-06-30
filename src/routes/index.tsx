@@ -252,7 +252,7 @@ function Game() {
                 width={1200}
                 height={1500}
                 loading="lazy"
-                className="aspect-[4/5] w-full object-cover object-center"
+                className="aspect-[460/215] w-full object-cover object-center"
               />
             </div>
           </div>

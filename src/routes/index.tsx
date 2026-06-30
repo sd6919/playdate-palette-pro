@@ -503,30 +503,6 @@ function Community() {
   );
 }
 
-function Marquee() {
-  const items = [
-    "Serious Strategy",
-    "Hilarious Fun",
-    "Made in Kraków",
-    "Est. 2023",
-    "We make it for fun",
-    "Ants in Space",
-  ];
-  return (
-    <div className="overflow-hidden border-y border-border py-4">
-      <div className="flex animate-[marquee_38s_linear_infinite] gap-10 whitespace-nowrap font-display text-2xl tracking-tight md:text-3xl">
-        {[...items, ...items, ...items].map((t, i) => (
-          <span key={i} className="flex items-center gap-10">
-            <span className={i % 2 ? "text-mint" : "text-foreground"}>{t}</span>
-            <span className="size-1.5 rounded-full bg-coral" aria-hidden />
-          </span>
-        ))}
-      </div>
-      <style>{`@keyframes marquee { from { transform: translateX(0) } to { transform: translateX(-33.333%) } }`}</style>
-    </div>
-  );
-}
-
 function Footer() {
   return (
     <footer id="contact" className="mx-auto max-w-[1320px] px-6 py-16 lg:px-10 lg:py-20">
@@ -596,7 +572,6 @@ function Home() {
       <Nav />
       <main>
         <Hero />
-        <Marquee />
         <About />
         <Game />
         <Videos />

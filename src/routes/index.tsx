@@ -39,12 +39,23 @@ const NAV = [
 
 function Logo({ className = "" }: { className?: string }) {
   return (
-    <a href="#top" className={`group inline-flex items-center ${className}`}>
-      <img
-        src={mezumoLogo}
-        alt="Mezumo"
-        className="h-7 w-auto object-contain"
-      />
+    <a
+      href="#top"
+      aria-label="Mezumo — home"
+      className={`group inline-flex items-center gap-2 text-foreground ${className}`}
+    >
+      <svg
+        viewBox="0 0 32 32"
+        aria-hidden="true"
+        className="h-6 w-6 shrink-0"
+        fill="currentColor"
+      >
+        <polygon points="2,10 12,10 7,20" />
+        <polygon points="18,12 30,12 24,24" />
+      </svg>
+      <span className="font-display text-[1.05rem] font-bold uppercase tracking-[0.18em] leading-none">
+        Mezumo
+      </span>
     </a>
   );
 }

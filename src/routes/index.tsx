@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import heroAntAsset from "@/assets/hero-ants-in-space.png.asset.json";
-import gameArtAsset from "@/assets/ants-in-space-hero.png.asset.json";
+import gameArtAsset from "@/assets/ants-in-space-banner.png.asset.json";
 import teamPhotoAsset from "@/assets/team.png.asset.json";
 const heroAnt = heroAntAsset.url;
 const gameArt = gameArtAsset.url;
@@ -252,7 +252,7 @@ function Game() {
                 width={1200}
                 height={1500}
                 loading="lazy"
-                className="aspect-[4/5] w-full object-cover object-center"
+                className="aspect-[460/215] w-full object-cover object-center"
               />
             </div>
           </div>

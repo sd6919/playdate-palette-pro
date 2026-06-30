@@ -156,7 +156,7 @@ function Hero() {
             {/* Studio stats */}
             <dl className="mt-14 grid grid-cols-3 gap-6 border-t border-border pt-8 max-w-xl">
               <Stat n="3" label="People in the studio" />
-              <Stat n="+10y" label="Of experience" />
+              <Stat n="+40y" label="Combined Experience" />
               <Stat n="+10" label="Shipped titles" />
             </dl>
           </div>
@@ -386,7 +386,7 @@ function Videos() {
 const TEAM = [
   { name: "Barbara Miklas", role: "3D & 2D Artist", years: "+10y", shipped: "8", label: "ARTIST" },
   { name: "Paweł Niezabitowski", role: "Designer · Programmer", years: "+15y", shipped: "8", label: "DEVELOPER" },
-  { name: "Bartosz Stachura", role: "Level Designer · Scripter", years: "+10y", shipped: "5", label: "SCRIPTER" },
+  { name: "Bartosz Stachura", role: "Level Designer · Scripter", years: "+10y", shipped: "8", label: "SCRIPTER" },
 ];
 
 function Team() {

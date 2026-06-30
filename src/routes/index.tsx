@@ -1,8 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import heroAnt from "@/assets/hero-ant.jpg";
-import gameArt from "@/assets/game-art.jpg";
+import gameArtAsset from "@/assets/ants-in-space-hero.png.asset.json";
 import teamPhotoAsset from "@/assets/team.png.asset.json";
+const gameArt = gameArtAsset.url;
 const teamPhoto = teamPhotoAsset.url;
 
 export const Route = createFileRoute("/")({
@@ -242,14 +243,14 @@ function Game() {
         />
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-14">
           <div className="lg:col-span-7 order-2 lg:order-1">
-            <div className="overflow-hidden rounded-2xl border border-border">
+            <div className="overflow-hidden rounded-2xl border border-border bg-background">
               <img
                 src={gameArt}
-                alt="Ants in Space key art — tiny ants in a cockpit battling termites on asteroids"
-                width={1600}
-                height={1200}
+                alt="Ants in Space key art — a blue space ant faces a giant red termite on an alien cliff"
+                width={1200}
+                height={1500}
                 loading="lazy"
-                className="aspect-[4/3] w-full object-cover"
+                className="aspect-[4/5] w-full object-cover object-center"
               />
             </div>
           </div>

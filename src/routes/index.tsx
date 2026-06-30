@@ -117,10 +117,20 @@ function Hero() {
               Serious strategy.{" "}
               <span className="italic font-serif text-coral">Hilarious</span> fun.
             </h1>
-            <p className="mt-8 max-w-[44ch] text-lg leading-relaxed text-muted-foreground text-pretty md:text-xl">
-              Mezumo is a small studio of seasoned developers from Kraków making
-              the kind of games we actually want to play. Currently flying:{" "}
-              <span className="text-foreground">Ants in Space</span>.
+            <p className="mt-8 max-w-[44ch] text-lg leading-relaxed text-muted-foreground text-pretty md:text-xl whitespace-pre-line">
+              Ants in Space!
+
+
+              Lead your Space Ants tribe to conquer planets and save the universe from these damn termites! 
+
+
+              Ants in Space is a Roguelike Strategy game. 
+
+
+              Fly through generated galaxies, explore planets, gather resources, and EVOLVE your species in a quest to destroy the invaders: 
+
+
+              The asteroid-riding Termites. : Ants in Space.
             </p>
 
             <div className="mt-10 flex flex-wrap items-center gap-3">

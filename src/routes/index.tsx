@@ -355,53 +355,6 @@ const VIDEOS = [
   },
 ];
 
-function Videos() {
-  return (
-    <section id="videos" className="mx-auto max-w-[1320px] px-6 py-20 lg:px-10 lg:py-28">
-      <SectionHeader
-        index="03"
-        kicker="On the internet"
-        title="People playing our weird little game."
-      />
-      <div className="grid gap-6 md:grid-cols-3">
-        {VIDEOS.map((v, i) => (
-          <a
-            key={v.id}
-            href={`https://www.youtube.com/watch?v=${v.id}`}
-            target="_blank"
-            rel="noreferrer"
-            className="group block"
-          >
-            <div className="relative overflow-hidden rounded-xl border border-border bg-surface">
-              <img
-                src={`https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`}
-                alt={v.title}
-                loading="lazy"
-                className="aspect-video w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-              />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span className="grid size-14 place-items-center rounded-full bg-background/80 text-foreground backdrop-blur transition-transform group-hover:scale-110">
-                  <svg viewBox="0 0 24 24" className="size-5" fill="currentColor">
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </span>
-              </div>
-            </div>
-            <div className="mt-4 flex items-baseline justify-between gap-3">
-              <span className="font-display text-xs text-muted-foreground">
-                0{i + 1} / {VIDEOS.length.toString().padStart(2, "0")}
-              </span>
-              <span className="eyebrow">{v.by}</span>
-            </div>
-            <h3 className="mt-1 font-display text-lg font-medium leading-snug tracking-tight text-foreground">
-              {v.title}
-            </h3>
-          </a>
-        ))}
-      </div>
-    </section>
-  );
-}
 
 const TEAM = [
   { name: "Barbara Miklas", role: "3D & 2D Artist", years: "+10y", shipped: "8", label: "ARTIST" },

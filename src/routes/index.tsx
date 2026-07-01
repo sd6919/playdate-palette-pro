@@ -85,15 +85,6 @@ function Nav() {
             </a>
           ))}
         </nav>
-        <a
-          href="https://store.steampowered.com/app/2366290/Ants_in_Space/"
-          target="_blank"
-          rel="noreferrer"
-          className="hidden items-center gap-2 rounded-full bg-foreground px-4 py-2 text-sm font-medium text-background transition-transform hover:scale-[1.02] sm:inline-flex"
-        >
-          <span>Wishlist on Steam</span>
-          <ArrowRight className="size-3.5" />
-        </a>
       </div>
     </header>
   );

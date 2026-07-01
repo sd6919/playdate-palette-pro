@@ -1,13 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import heroAntAsset from "@/assets/hero-ants-in-space.png.asset.json";
-import gameArtAsset from "@/assets/ants-in-space-banner.png.asset.json";
-import teamPhotoAsset from "@/assets/team.png.asset.json";
-import mezumoLogoAsset from "@/assets/mezumo-mark.png.asset.json";
-const heroAnt = heroAntAsset.url;
-const gameArt = gameArtAsset.url;
-const teamPhoto = teamPhotoAsset.url;
-const mezumoLogo = mezumoLogoAsset.url;
+import heroAnt from "@/assets/hero-ants-in-space.png";
+import gameArt from "@/assets/ants-in-space-banner.png";
+import teamPhoto from "@/assets/team.png";
+import mezumoLogo from "@/assets/mezumo-mark.png";
 
 
 export const Route = createFileRoute("/")({

@@ -112,7 +112,7 @@ function Hero() {
           <div className="lg:col-span-7">
             <h1
               className="font-display text-[clamp(2.6rem,7.5vw,6.25rem)] font-semibold leading-[0.95] tracking-[-0.035em] text-balance text-coral"
-              style={{ textShadow: "0 0 28px oklch(0.72 0.21 18 / 0.35)" }}
+              style={{ textShadow: "0 0 28px rgba(238, 33, 108, 0.35)" }}
             >
               Ants in Space!
             </h1>

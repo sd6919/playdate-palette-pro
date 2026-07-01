@@ -233,15 +233,38 @@ function About() {
         </h2>
         <div className="mt-12 grid gap-12 lg:grid-cols-12 lg:gap-14">
           <div className="lg:col-span-7 order-2 lg:order-1">
-            <div className="overflow-hidden rounded-2xl border border-border bg-background">
-              <img
-                src={gameArt}
-                alt="Ants in Space key art — a blue space ant faces a giant red termite on an alien cliff"
-                width={1200}
-                height={1500}
-                loading="lazy"
-                className="aspect-[460/215] w-full object-cover object-center"
-              />
+            <div className="grid gap-4 sm:grid-cols-2">
+              {VIDEOS.map((v, i) => (
+                <a
+                  key={v.id}
+                  href={`https://www.youtube.com/watch?v=${v.id}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className={`group block ${i === 0 ? "sm:col-span-2" : ""}`}
+                >
+                  <div className="relative overflow-hidden rounded-xl border border-border bg-surface">
+                    <img
+                      src={`https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`}
+                      alt={v.title}
+                      loading="lazy"
+                      className="aspect-video w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <span className="grid size-12 place-items-center rounded-full bg-background/80 text-foreground backdrop-blur transition-transform group-hover:scale-110">
+                        <svg viewBox="0 0 24 24" className="size-4" fill="currentColor">
+                          <path d="M8 5v14l11-7z" />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                  <div className="mt-3 flex items-baseline justify-between gap-3">
+                    <h3 className="font-display text-sm font-medium leading-snug tracking-tight text-foreground line-clamp-1">
+                      {v.title}
+                    </h3>
+                    <span className="eyebrow shrink-0">{v.by}</span>
+                  </div>
+                </a>
+              ))}
             </div>
           </div>
           <div className="lg:col-span-5 order-1 lg:order-2 space-y-6">
@@ -279,62 +302,14 @@ function About() {
               >
                 Steam page <ArrowRight className="size-3.5" />
               </a>
-              <a
-                href="#videos"
-                className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm font-medium hover:bg-surface-2"
-              >
-                Watch gameplay
-              </a>
             </div>
           </div>
-        </div>
-      </div>
-
-      {/* Videos */}
-      <div id="videos" className="mt-20 pt-20 border-t border-border">
-        <h2 className="font-display text-[clamp(1.9rem,4.5vw,3.25rem)] font-semibold leading-[1.02] tracking-[-0.02em] text-balance">
-          People playing our weird little game.
-        </h2>
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
-          {VIDEOS.map((v, i) => (
-            <a
-              key={v.id}
-              href={`https://www.youtube.com/watch?v=${v.id}`}
-              target="_blank"
-              rel="noreferrer"
-              className="group block"
-            >
-              <div className="relative overflow-hidden rounded-xl border border-border bg-surface">
-                <img
-                  src={`https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`}
-                  alt={v.title}
-                  loading="lazy"
-                  className="aspect-video w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="grid size-14 place-items-center rounded-full bg-background/80 text-foreground backdrop-blur transition-transform group-hover:scale-110">
-                    <svg viewBox="0 0 24 24" className="size-5" fill="currentColor">
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </span>
-                </div>
-              </div>
-              <div className="mt-4 flex items-baseline justify-between gap-3">
-                <span className="font-display text-xs text-muted-foreground">
-                  0{i + 1} / {VIDEOS.length.toString().padStart(2, "0")}
-                </span>
-                <span className="eyebrow">{v.by}</span>
-              </div>
-              <h3 className="mt-1 font-display text-lg font-medium leading-snug tracking-tight text-foreground">
-                {v.title}
-              </h3>
-            </a>
-          ))}
         </div>
       </div>
     </section>
   );
 }
+
 
 
 const VIDEOS = [

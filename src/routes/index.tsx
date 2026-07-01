@@ -274,7 +274,8 @@ function Game() {
                 href="https://store.steampowered.com/app/2366290/Ants_in_Space/"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-full bg-foreground px-5 py-2.5 text-sm font-medium text-background transition-transform hover:-translate-y-0.5"
+                className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium text-white transition-transform hover:-translate-y-0.5"
+                style={{ backgroundColor: "#ee216c" }}
               >
                 Steam page <ArrowRight className="size-3.5" />
               </a>

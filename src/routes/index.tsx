@@ -123,7 +123,7 @@ function Hero() {
               className="font-display text-[clamp(2.6rem,7.5vw,6.25rem)] font-semibold leading-[0.95] tracking-[-0.035em] text-balance text-coral"
               style={{ textShadow: "0 0 28px oklch(0.72 0.21 18 / 0.35)" }}
             >
-              Our Game
+              Ants in Space!
             </h1>
             <p className="mt-8 max-w-[44ch] text-lg leading-relaxed text-muted-foreground text-pretty md:text-xl whitespace-pre-line">
               Ants in Space!

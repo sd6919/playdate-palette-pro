@@ -141,12 +141,6 @@ function Hero() {
                 Meet the ants
                 <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
               </a>
-              <a
-                href="#consulting"
-                className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-surface"
-              >
-                Hire us to consult
-              </a>
             </div>
 
             {/* Studio stats */}

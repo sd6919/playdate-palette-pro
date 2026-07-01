@@ -301,7 +301,7 @@ const VIDEOS = [
   },
   {
     id: "v2TdF8Cp6FU",
-    title: ""The Ants Will Save Us!" — Demo",
+    title: "\"The Ants Will Save Us!\" — Demo",
     by: "GameHopping",
   },
   {

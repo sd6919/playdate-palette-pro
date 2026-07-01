@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import heroAnt from "@/assets/hero-ants-in-space.png";
 import gameArt from "@/assets/ants-in-space-banner.png";
@@ -84,6 +84,12 @@ function Nav() {
               {n.label}
             </a>
           ))}
+          <Link
+            to="/ue"
+            className="rounded-full px-3.5 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-surface hover:text-foreground"
+          >
+            UE
+          </Link>
         </nav>
       </div>
     </header>

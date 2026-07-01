@@ -4,6 +4,66 @@ import heroAnt from "@/assets/hero-ants-in-space.png";
 import gameArt from "@/assets/ants-in-space-banner.png";
 import teamPhoto from "@/assets/team.png";
 import mezumoLogo from "@/assets/mezumo-mark.png";
+import bgShapes from "@/assets/bg-shapes.png";
+
+function BackgroundShapes() {
+  const [progress, setProgress] = useState(0);
+  useEffect(() => {
+    const onScroll = () => {
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      setProgress(max > 0 ? Math.min(1, window.scrollY / max) : 0);
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const shift = progress * 60; // vw travel
+  const fade = 1 - progress;
+
+  return (
+    <div
+      aria-hidden="true"
+      className="pointer-events-none fixed inset-0 z-0 overflow-hidden"
+      style={{ opacity: 0.35 * fade + 0.05 }}
+    >
+      <style>{`
+        @keyframes bgFloatL { 0%,100%{transform:translate3d(var(--sx,0),0,0)} 50%{transform:translate3d(var(--sx,0),-14px,0)} }
+        @keyframes bgFloatR { 0%,100%{transform:translate3d(var(--sx,0),0,0)} 50%{transform:translate3d(var(--sx,0),12px,0)} }
+      `}</style>
+      <div
+        className="absolute inset-y-0 left-0 w-1/2"
+        style={{
+          ["--sx" as string]: `-${shift}vw`,
+          animation: "bgFloatL 7s ease-in-out infinite",
+          willChange: "transform",
+        }}
+      >
+        <img
+          src={bgShapes}
+          alt=""
+          className="absolute inset-y-0 left-0 h-full w-[100vw] max-w-none object-cover object-left"
+          style={{ clipPath: "inset(0 50% 0 0)" }}
+        />
+      </div>
+      <div
+        className="absolute inset-y-0 right-0 w-1/2"
+        style={{
+          ["--sx" as string]: `${shift}vw`,
+          animation: "bgFloatR 8s ease-in-out infinite",
+          willChange: "transform",
+        }}
+      >
+        <img
+          src={bgShapes}
+          alt=""
+          className="absolute inset-y-0 right-0 h-full w-[100vw] max-w-none object-cover object-right"
+          style={{ clipPath: "inset(0 0 0 50%)" }}
+        />
+      </div>
+    </div>
+  );
+}
 
 
 export const Route = createFileRoute("/")({
@@ -617,10 +677,11 @@ function SocialSidebar() {
 
 function Home() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="relative min-h-screen bg-background text-foreground">
+      <BackgroundShapes />
       <Nav />
       <SocialSidebar />
-      <main>
+      <main className="relative z-10">
         <Hero />
         <About />
         <Game />

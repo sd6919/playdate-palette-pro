@@ -430,7 +430,7 @@ function Consulting() {
   return (
     <section id="consulting" className="mx-auto max-w-[1320px] px-6 py-20 lg:px-10 lg:py-28">
       <SectionHeader
-        index="05"
+        index="03"
         kicker="GAME CONSULTING"
         title="We also help other studios ship better games."
       />

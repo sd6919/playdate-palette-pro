@@ -134,10 +134,10 @@ function Hero() {
 
             <div className="mt-10 flex flex-wrap items-center gap-3">
               <a
-                href="#game"
-                className="group inline-flex items-center gap-2 rounded-full bg-coral px-6 py-3 text-sm font-medium text-primary-foreground transition-transform hover:-translate-y-0.5"
-              >
-                Meet the ants
+              href="#about"
+              className="group inline-flex items-center gap-2 rounded-full bg-coral px-6 py-3 text-sm font-medium text-primary-foreground transition-transform hover:-translate-y-0.5"
+            >
+              Meet the ants
                 <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
               </a>
             </div>

@@ -444,7 +444,8 @@ function Consulting() {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 rounded-full bg-mint px-5 py-2.5 text-sm font-medium text-background hover:-translate-y-0.5 transition-transform"
+            style={{ backgroundColor: "#ee216c" }}
+            className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium text-background hover:-translate-y-0.5 transition-transform"
           >
             Start a conversation <ArrowRight className="size-3.5" />
           </a>

@@ -729,6 +729,7 @@ function SocialSidebar() {
 function Home() {
   return (
     <div className="relative min-h-screen bg-background text-foreground">
+      <StarField />
       <BackgroundShapes />
       <Nav />
       <SocialSidebar />

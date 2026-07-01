@@ -377,7 +377,7 @@ function Team() {
     <section id="team" className="bg-surface grain">
       <div className="mx-auto max-w-[1320px] px-6 py-20 lg:px-10 lg:py-28">
         <SectionHeader
-          index="04"
+          index="02"
           kicker="The Studio"
           title="Three people. One office in Kraków. A lot of coffee."
         />

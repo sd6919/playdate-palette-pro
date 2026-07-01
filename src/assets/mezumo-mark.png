@@ -1,0 +1,244 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" as="image" href="/__l5e/assets-v1/d5eb544a-a1a7-470c-ae98-36898bb63b27/mezumo-mark.png"/><link rel="preload" as="image" href="/__l5e/assets-v1/ec13b5d2-5897-469f-8e49-dc0415015f1c/hero-ants-in-space.png"/><link rel="stylesheet" href="/assets/styles-CIEJN5R9.css" data-precedence="default"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" data-precedence="default"/><title>Mezumo — Serious strategy, hilarious fun</title><meta name="author" content="Mezumo"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content="@MezumoGames"/><meta name="twitter:title" content="Mezumo — We make games for fun"/><meta name="twitter:description" content="Mezumo Play is a website showcasing indie games with a unique, playful aesthetic."/><meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1eda06bf-2cf1-4904-8a53-f58dd6517a0d/id-preview-3ba73942--83768b6d-4646-47e5-a356-cf32b6fafcaf.lovable.app-1782823414508.png"/><meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1eda06bf-2cf1-4904-8a53-f58dd6517a0d/id-preview-3ba73942--83768b6d-4646-47e5-a356-cf32b6fafcaf.lovable.app-1782823414508.png"/><meta name="description" content="Indie game studio from Kraków, Poland. Creators of Ants in Space — a roguelike strategy game. We make games we want to play."/><meta property="og:title" content="Mezumo — Serious strategy, hilarious fun"/><meta property="og:description" content="An indie studio making playful, strategic games. Currently building Ants in Space."/><link rel="modulepreload" href="/assets/index-C9MrMpp5.js"/><link rel="modulepreload" href="/assets/routes-B0rNLtSh.js"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+<style>
+	@font-face {
+		font-family: 'CameraPlainVariable';
+		src: url('https://cdn.gpteng.co/mcp-widgets/v1/fonts/CameraPlainVariable.woff2') format('woff2');
+		font-weight: 100 900;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	#lovable-badge {
+		--badge-bg: #1b1b1b;
+		--badge-text: #c5c1b9;
+		--badge-text-hover: #dcdad5;
+		--badge-radius: 6px;
+		--badge-padding: 8px;
+		--badge-gap: 6px;
+		--badge-shadow: 
+			0 0 0 1px rgba(0, 0, 0, 0.88),
+			0 1px 0 0 rgba(0, 0, 0, 0.04),
+			0 2px 2px -1px rgba(0, 0, 0, 0.08),
+			0 4px 4px -2px rgba(0, 0, 0, 0.08),
+			0 8px 8px -4px rgba(0, 0, 0, 0.08),
+			0 16px 16px -8px rgba(0, 0, 0, 0.08);
+		--badge-transition-duration: 0.2s;
+		--badge-transition-easing: cubic-bezier(0.16, 1, 0.32, 1);
+		--focus-color: #575ECF;
+		--focus-offset: 2px;
+		--focus-width: 2px;
+		
+		position: fixed;
+		bottom: 12px;
+		right: 12px;
+		height: 24px;
+		display: flex;
+		align-items: center;
+		z-index: 1000000;
+		background-color: var(--badge-bg) !important;
+		color: var(--badge-text) !important;
+		border-radius: var(--badge-radius);
+		box-shadow: var(--badge-shadow) !important;
+		font-size: 12px;
+		font-family: CameraPlainVariable, "CameraPlainVariable Fallback", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+		font-weight: 400 !important;
+		text-transform: none !important;
+		font-feature-settings: normal !important;
+		transform: translateZ(0);
+		will-change: transform, opacity;
+	}
+
+	#lovable-badge-cta {
+		display: flex;
+		align-items: center;
+		gap: var(--badge-gap);
+		padding: 0 var(--badge-padding);
+		height: 100%;
+		color: inherit;
+		text-decoration: none;
+		white-space: nowrap;
+		border-radius: var(--badge-radius) 0 0 var(--badge-radius);
+		transition: 
+			background-color var(--badge-transition-duration) ease,
+			color var(--badge-transition-duration) ease,
+			transform 0.1s ease;
+	}
+
+	#lovable-badge-cta:hover {
+		background: rgba(255, 255, 255, 0.04);
+		color: var(--badge-text-hover);
+	}
+
+	#lovable-badge-cta:active {
+		transform: scale(0.98);
+	}
+
+	#lovable-badge-cta:focus {
+		outline: none;
+	}
+
+	#lovable-badge-cta:focus-visible {
+		outline: var(--focus-width) solid var(--focus-color);
+		outline-offset: var(--focus-offset);
+		z-index: 1;
+	}
+
+	#lovable-badge-text {
+		line-height: 1;
+	}
+
+	#lovable-badge-divider {
+		width: 1px;
+		height: 24px;
+		background-color: rgba(255, 255, 255, 0.04);
+		flex-shrink: 0;
+	}
+
+	#lovable-badge-close {
+		width: 24px;
+		height: 24px;
+		min-width: 24px;
+		min-height: 24px;
+		cursor: pointer;
+		background: none;
+		border: none;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 0 var(--badge-radius) var(--badge-radius) 0;
+		flex-shrink: 0;
+		transition: 
+			background-color var(--badge-transition-duration) ease,
+			transform 0.1s ease;
+	}
+
+	#lovable-badge-close:hover {
+		background: rgba(255, 255, 255, 0.04);
+	}
+
+	#lovable-badge-close:active {
+		transform: scale(0.92);
+	}
+
+	#lovable-badge-close:focus {
+		outline: none;
+	}
+
+	#lovable-badge-close:focus-visible {
+		outline: var(--focus-width) solid var(--focus-color);
+		outline-offset: calc(var(--focus-offset) * -1);
+		z-index: 1;
+	}
+
+	#lovable-badge-close svg path {
+		fill: var(--badge-text);
+		transition: fill var(--badge-transition-duration) ease;
+	}
+
+	#lovable-badge-close:hover svg path {
+		fill: var(--badge-text-hover);
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		#lovable-badge-cta,
+		#lovable-badge-close,
+		#lovable-badge-close svg path {
+			transition: none;
+		}
+		
+		#lovable-badge-cta:active,
+		#lovable-badge-close:active {
+			transform: none;
+		}
+	}
+
+	@media (prefers-contrast: high) {
+		#lovable-badge {
+			--badge-bg: #000;
+			--badge-text: #fff;
+			--badge-text-hover: #fff;
+			border: 2px solid currentColor;
+		}
+		
+		#lovable-badge-cta:focus-visible,
+		#lovable-badge-close:focus-visible {
+			outline-width: 3px;
+		}
+	}
+</style>
+<script defer src="/~flock.js" data-proxy-url="/~api/analytics"></script><script defer src="/__l5e/events.js" data-artifact-kind="dwl_content_hash" data-artifact-id="775a3f3cd3d13b9d7940e9481b3acdf3e135da54bf6b2a9bd5ea7bdebb170989" data-commit-sha="89e7f27b8b7b8a0a88fb99690d5cab290c47c6fe" data-context-token="v1.eyJwcm9qZWN0X2lkIjoiODM3NjhiNmQtNDY0Ni00N2U1LWEzNTYtY2YzMmI2ZmFmY2FmIiwiYXJ0aWZhY3Rfa2luZCI6ImR3bF9jb250ZW50X2hhc2giLCJhcnRpZmFjdF9pZCI6Ijc3NWEzZjNjZDNkMTNiOWQ3OTQwZTk0ODFiM2FjZGYzZTEzNWRhNTRiZjZiMmE5YmQ1ZWE3YmRlYmIxNzA5ODkiLCJjb21taXRfc2hhIjoiODllN2YyN2I4YjdiOGEwYTg4ZmI5OTY5MGQ1Y2FiMjkwYzQ3YzZmZSIsImV4cCI6MTc4Mjg5ODkwNX0._V51VSJtHAK4FjR8xE7j-l0Av8Urztth_zcM3UZ84xU"></script></head><body><!--$--><div class="min-h-screen bg-background text-foreground"><header class="sticky top-0 z-50 w-full transition-colors duration-300 border-b border-transparent"><div class="mx-auto flex h-16 max-w-[1320px] items-center justify-between px-6 lg:px-10"><a href="#top" aria-label="Mezumo — home" class="group inline-flex items-center gap-2 text-foreground "><img src="/__l5e/assets-v1/d5eb544a-a1a7-470c-ae98-36898bb63b27/mezumo-mark.png" alt="" aria-hidden="true" class="h-7 w-auto shrink-0"/><span class="font-display text-[1.05rem] font-bold uppercase tracking-[0.18em] leading-none">Mezumo</span></a><nav class="hidden items-center gap-1 md:flex"><a href="#about" class="rounded-full px-3.5 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-surface hover:text-foreground">About</a><a href="#game" class="rounded-full px-3.5 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-surface hover:text-foreground">Game</a><a href="#team" class="rounded-full px-3.5 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-surface hover:text-foreground">Team</a><a href="#consulting" class="rounded-full px-3.5 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-surface hover:text-foreground">Consulting</a><a href="#contact" class="rounded-full px-3.5 py-1.5 text-sm text-muted-foreground transition-colors hover:bg-surface hover:text-foreground">Contact</a></nav><a href="https://store.steampowered.com/app/2366290/Ants_in_Space/" target="_blank" rel="noreferrer" class="hidden items-center gap-2 rounded-full bg-foreground px-4 py-2 text-sm font-medium text-background transition-transform hover:scale-[1.02] sm:inline-flex"><span>Wishlist on Steam</span><svg viewBox="0 0 24 24" fill="none" class="size-3.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a></div></header><main><section id="top" class="relative overflow-hidden"><div class="mx-auto max-w-[1320px] px-6 pt-10 pb-20 lg:px-10 lg:pt-16 lg:pb-32"><div class="mb-10 flex flex-wrap items-center justify-between gap-3 text-xs"><span class="eyebrow">KRAKÓW, PL</span><span class="eyebrow">EST. 2023 | WE MAKE IT FOR FUN</span></div><div class="grid gap-12 lg:grid-cols-12 lg:gap-10"><div class="lg:col-span-7"><h1 class="font-display text-[clamp(2.6rem,7.5vw,6.25rem)] font-semibold leading-[0.95] tracking-[-0.035em] text-balance text-coral" style="text-shadow:0 0 28px oklch(0.72 0.21 18 / 0.35)">Our Game</h1><p class="mt-8 max-w-[44ch] text-lg leading-relaxed text-muted-foreground text-pretty md:text-xl whitespace-pre-line">Ants in Space! Lead your Space Ants tribe to conquer planets and save the universe from these damn termites! Ants in Space is a Roguelike Strategy game. Fly through generated galaxies, explore planets, gather resources, and EVOLVE your species in a quest to destroy the invaders: The asteroid-riding Termites.</p><div class="mt-10 flex flex-wrap items-center gap-3"><a href="#game" class="group inline-flex items-center gap-2 rounded-full bg-coral px-6 py-3 text-sm font-medium text-primary-foreground transition-transform hover:-translate-y-0.5">Meet the ants<svg viewBox="0 0 24 24" fill="none" class="size-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a><a href="#consulting" class="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-surface">Hire us to consult</a></div><dl class="mt-14 grid grid-cols-3 gap-6 border-t border-border pt-8 max-w-xl"><div><dt class="font-display text-3xl font-semibold tracking-tight">3</dt><dd class="mt-1 text-xs leading-snug text-muted-foreground">People in the studio</dd></div><div><dt class="font-display text-3xl font-semibold tracking-tight">+40y</dt><dd class="mt-1 text-xs leading-snug text-muted-foreground">Combined Experience</dd></div><div><dt class="font-display text-3xl font-semibold tracking-tight">+10</dt><dd class="mt-1 text-xs leading-snug text-muted-foreground">Shipped titles</dd></div></dl></div><div class="lg:col-span-5"><figure class="relative"><div class="overflow-hidden rounded-2xl border border-border bg-surface grain"><img src="/__l5e/assets-v1/ec13b5d2-5897-469f-8e49-dc0415015f1c/hero-ants-in-space.png" alt="An ant astronaut in a spacesuit stands on an alien planet" width="1600" height="1200" class="aspect-[4/5] w-full object-cover"/></div><figcaption class="mt-3 flex items-center justify-between text-xs text-muted-foreground"><span class="eyebrow">
+</span><span class="font-serif italic text-foreground/70">Mezumo, 2026</span></figcaption></figure></div></div></div></section><section id="about" class="mx-auto max-w-[1320px] px-6 py-20 lg:px-10 lg:py-28"><div class="mb-12 grid gap-4 border-t border-border pt-6 md:grid-cols-12"><div class="md:col-span-3"><div class="flex items-center gap-3"><span class="font-display text-sm text-coral">01</span><span class="eyebrow">About</span></div></div><div class="md:col-span-9"><h2 class="font-display text-[clamp(1.9rem,4.5vw,3.25rem)] font-semibold leading-[1.02] tracking-[-0.02em] text-balance">A small studio with very big ant ambitions.</h2></div></div><div class="grid gap-12 md:grid-cols-12"><div class="md:col-span-3 md:col-start-4"><p class="font-serif text-2xl leading-snug text-foreground italic">
+</p></div><div class="md:col-span-5 space-y-5 text-base leading-relaxed text-muted-foreground"><p>Mezumo is an independent game studio founded in 2023 in Kraków, Poland. We&#x27;re three friends with eight years of trenches together at Bloober Team and a soft spot for strategy games that don&#x27;t take themselves too seriously.</p><p>Everything we ship starts the same way: a tiny, weird idea that makes us laugh. Then we sweat the systems until the laugh sticks.</p></div></div></section><section id="game" class="bg-surface grain"><div class="mx-auto max-w-[1320px] px-6 py-20 lg:px-10 lg:py-28"><div class="mb-12 grid gap-4 border-t border-border pt-6 md:grid-cols-12"><div class="md:col-span-3"><div class="flex items-center gap-3"><span class="font-display text-sm text-coral">02</span><span class="eyebrow">Now Playing</span></div></div><div class="md:col-span-9"><h2 class="font-display text-[clamp(1.9rem,4.5vw,3.25rem)] font-semibold leading-[1.02] tracking-[-0.02em] text-balance">Ants in Space. A roguelike strategy game.</h2></div></div><div class="grid gap-12 lg:grid-cols-12 lg:gap-14"><div class="lg:col-span-7 order-2 lg:order-1"><div class="overflow-hidden rounded-2xl border border-border bg-background"><img src="/__l5e/assets-v1/e19328ef-00bc-4a1c-8a30-cd5f770e8826/ants-in-space-banner.png" alt="Ants in Space key art — a blue space ant faces a giant red termite on an alien cliff" width="1200" height="1500" loading="lazy" class="aspect-[460/215] w-full object-cover object-center"/></div></div><div class="lg:col-span-5 order-1 lg:order-2 space-y-6"><p class="text-lg leading-relaxed text-foreground text-pretty">Lead your Space Ants tribe to conquer planets and save the universe from these damn termites.</p><p class="leading-relaxed text-muted-foreground">Fly through procedurally generated galaxies. Explore planets. Gather resources. <em class="font-serif text-foreground">Evolve</em> <!-- -->your species in a quest to destroy the invaders, the asteroid-riding Termites.</p><ul class="mt-2 divide-y divide-border border-y border-border"><li class="flex items-baseline justify-between py-3 text-sm"><span class="eyebrow">Genre</span><span class="font-display font-medium text-foreground">Roguelike · Strategy</span></li><li class="flex items-baseline justify-between py-3 text-sm"><span class="eyebrow">Platforms</span><span class="font-display font-medium text-foreground">PC (Steam)</span></li><li class="flex items-baseline justify-between py-3 text-sm"><span class="eyebrow">Status</span><span class="font-display font-medium text-foreground">In development</span></li><li class="flex items-baseline justify-between py-3 text-sm"><span class="eyebrow">Players</span><span class="font-display font-medium text-foreground">Single-player</span></li></ul><div class="flex flex-wrap gap-3 pt-2"><a href="https://store.steampowered.com/app/2366290/Ants_in_Space/" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 rounded-full bg-foreground px-5 py-2.5 text-sm font-medium text-background transition-transform hover:-translate-y-0.5">Steam page <svg viewBox="0 0 24 24" fill="none" class="size-3.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a><a href="#videos" class="inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm font-medium hover:bg-surface-2">Watch gameplay</a></div></div></div></div></section><section id="videos" class="mx-auto max-w-[1320px] px-6 py-20 lg:px-10 lg:py-28"><div class="mb-12 grid gap-4 border-t border-border pt-6 md:grid-cols-12"><div class="md:col-span-3"><div class="flex items-center gap-3"><span class="font-display text-sm text-coral">03</span><span class="eyebrow">On the internet</span></div></div><div class="md:col-span-9"><h2 class="font-display text-[clamp(1.9rem,4.5vw,3.25rem)] font-semibold leading-[1.02] tracking-[-0.02em] text-balance">People playing our weird little game.</h2></div></div><div class="grid gap-6 md:grid-cols-3"><a href="https://www.youtube.com/watch?v=cE_kSZcIK0U" target="_blank" rel="noreferrer" class="group block"><div class="relative overflow-hidden rounded-xl border border-border bg-surface"><img src="https://i.ytimg.com/vi/cE_kSZcIK0U/hqdefault.jpg" alt="I Evolved Ants To Battle Space Termites" loading="lazy" class="aspect-video w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"/><div class="absolute inset-0 flex items-center justify-center"><span class="grid size-14 place-items-center rounded-full bg-background/80 text-foreground backdrop-blur transition-transform group-hover:scale-110"><svg viewBox="0 0 24 24" class="size-5" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg></span></div></div><div class="mt-4 flex items-baseline justify-between gap-3"><span class="font-display text-xs text-muted-foreground">0<!-- -->1<!-- --> / <!-- -->03</span><span class="eyebrow">Frazzz</span></div><h3 class="mt-1 font-display text-lg font-medium leading-snug tracking-tight text-foreground">I Evolved Ants To Battle Space Termites</h3></a><a href="https://www.youtube.com/watch?v=1fLvqcAsXu4" target="_blank" rel="noreferrer" class="group block"><div class="relative overflow-hidden rounded-xl border border-border bg-surface"><img src="https://i.ytimg.com/vi/1fLvqcAsXu4/hqdefault.jpg" alt="“The Ants Will Save Us!” — Demo" loading="lazy" class="aspect-video w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"/><div class="absolute inset-0 flex items-center justify-center"><span class="grid size-14 place-items-center rounded-full bg-background/80 text-foreground backdrop-blur transition-transform group-hover:scale-110"><svg viewBox="0 0 24 24" class="size-5" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg></span></div></div><div class="mt-4 flex items-baseline justify-between gap-3"><span class="font-display text-xs text-muted-foreground">0<!-- -->2<!-- --> / <!-- -->03</span><span class="eyebrow">GameHopping</span></div><h3 class="mt-1 font-display text-lg font-medium leading-snug tracking-tight text-foreground">“The Ants Will Save Us!” — Demo</h3></a><a href="https://www.youtube.com/watch?v=KQ93x9YKRHc" target="_blank" rel="noreferrer" class="group block"><div class="relative overflow-hidden rounded-xl border border-border bg-surface"><img src="https://i.ytimg.com/vi/KQ93x9YKRHc/hqdefault.jpg" alt="Evolving Ants to Take Over the Galaxy" loading="lazy" class="aspect-video w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"/><div class="absolute inset-0 flex items-center justify-center"><span class="grid size-14 place-items-center rounded-full bg-background/80 text-foreground backdrop-blur transition-transform group-hover:scale-110"><svg viewBox="0 0 24 24" class="size-5" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg></span></div></div><div class="mt-4 flex items-baseline justify-between gap-3"><span class="font-display text-xs text-muted-foreground">0<!-- -->3<!-- --> / <!-- -->03</span><span class="eyebrow">InterndotGif</span></div><h3 class="mt-1 font-display text-lg font-medium leading-snug tracking-tight text-foreground">Evolving Ants to Take Over the Galaxy</h3></a></div></section><section id="team" class="bg-surface grain"><div class="mx-auto max-w-[1320px] px-6 py-20 lg:px-10 lg:py-28"><div class="mb-12 grid gap-4 border-t border-border pt-6 md:grid-cols-12"><div class="md:col-span-3"><div class="flex items-center gap-3"><span class="font-display text-sm text-coral">04</span><span class="eyebrow">The Studio</span></div></div><div class="md:col-span-9"><h2 class="font-display text-[clamp(1.9rem,4.5vw,3.25rem)] font-semibold leading-[1.02] tracking-[-0.02em] text-balance">Three people. One office in Kraków. A lot of coffee.</h2></div></div><figure class="mb-14"><div class="overflow-hidden rounded-2xl border border-border"><img src="/__l5e/assets-v1/fab1fa65-b934-4d28-ac20-1a689228a1c3/team.png" alt="The Mezumo team — Barbara, Paweł and Bartosz" loading="lazy" class="aspect-[21/9] w-full object-cover object-center"/></div><figcaption class="mt-3 flex items-center justify-between text-xs text-muted-foreground"><span class="eyebrow">
+</span><span class="font-serif italic text-foreground/70">
+</span></figcaption></figure><ul class="grid gap-px bg-border rounded-2xl overflow-hidden border border-border md:grid-cols-3"><li class="bg-background p-8 flex flex-col gap-4"><div class="flex items-baseline justify-between"><span class="font-display text-xs text-coral">0<!-- -->1</span><span class="eyebrow">ARTIST</span></div><h3 class="font-display text-2xl font-semibold tracking-tight text-coral">Barbara Miklas</h3><p class="text-sm text-muted-foreground">3D &amp; 2D Artist</p><dl class="mt-auto grid grid-cols-2 gap-4 border-t border-border pt-4"><div><dt class="eyebrow">Experience</dt><dd class="mt-1 font-display text-lg text-foreground">+10y</dd></div><div><dt class="eyebrow">Shipped</dt><dd class="mt-1 font-display text-lg text-foreground">8<!-- --> titles</dd></div></dl></li><li class="bg-background p-8 flex flex-col gap-4"><div class="flex items-baseline justify-between"><span class="font-display text-xs text-coral">0<!-- -->2</span><span class="eyebrow">DEVELOPER</span></div><h3 class="font-display text-2xl font-semibold tracking-tight text-coral">Paweł Niezabitowski</h3><p class="text-sm text-muted-foreground">Designer · Programmer</p><dl class="mt-auto grid grid-cols-2 gap-4 border-t border-border pt-4"><div><dt class="eyebrow">Experience</dt><dd class="mt-1 font-display text-lg text-foreground">+15y</dd></div><div><dt class="eyebrow">Shipped</dt><dd class="mt-1 font-display text-lg text-foreground">8<!-- --> titles</dd></div></dl></li><li class="bg-background p-8 flex flex-col gap-4"><div class="flex items-baseline justify-between"><span class="font-display text-xs text-coral">0<!-- -->3</span><span class="eyebrow">SCRIPTER</span></div><h3 class="font-display text-2xl font-semibold tracking-tight text-coral">Bartosz Stachura</h3><p class="text-sm text-muted-foreground">Level Designer · Scripter</p><dl class="mt-auto grid grid-cols-2 gap-4 border-t border-border pt-4"><div><dt class="eyebrow">Experience</dt><dd class="mt-1 font-display text-lg text-foreground">+10y</dd></div><div><dt class="eyebrow">Shipped</dt><dd class="mt-1 font-display text-lg text-foreground">8<!-- --> titles</dd></div></dl></li></ul></div></section><section id="consulting" class="mx-auto max-w-[1320px] px-6 py-20 lg:px-10 lg:py-28"><div class="mb-12 grid gap-4 border-t border-border pt-6 md:grid-cols-12"><div class="md:col-span-3"><div class="flex items-center gap-3"><span class="font-display text-sm text-coral">05</span><span class="eyebrow">GAME CONSULTING</span></div></div><div class="md:col-span-9"><h2 class="font-display text-[clamp(1.9rem,4.5vw,3.25rem)] font-semibold leading-[1.02] tracking-[-0.02em] text-balance">We also help other studios ship better games.</h2></div></div><div class="grid gap-12 md:grid-cols-12"><div class="md:col-span-5 space-y-5 text-muted-foreground leading-relaxed"><p>Unlock Your Game&#x27;s Potential with Mezumo.</p><p>At Mezumo, we provide expert game consulting services to help developers turn their visions into reality. Whether you&#x27;re an indie developer or an established studio, we tailor our insights to meet your unique needs, ensuring your game stands out in a competitive market.<!-- --> <!-- -->Partner with us, and let&#x27;s create something extraordinary together.</p><a href="#contact" class="inline-flex items-center gap-2 rounded-full bg-mint px-5 py-2.5 text-sm font-medium text-background hover:-translate-y-0.5 transition-transform">Start a conversation <svg viewBox="0 0 24 24" fill="none" class="size-3.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a></div><ul class="md:col-span-7 grid gap-px bg-border rounded-2xl overflow-hidden border border-border"><li class="bg-background p-6"><h3 class="font-display text-lg font-medium tracking-tight">Game Design Reviews</h3><p class="mt-2 text-sm text-muted-foreground">Mechanics, loops, balance, fun-finding.</p></li><li class="bg-background p-6"><h3 class="font-display text-lg font-medium tracking-tight">Prototype to Vertical Slice</h3><p class="mt-2 text-sm text-muted-foreground">From concept to playable, with you.</p></li></ul></div></section><section class="border-y border-border bg-surface-2 grain"><div class="mx-auto max-w-[1320px] px-6 py-20 lg:px-10 lg:py-28"><div class="grid gap-10 lg:grid-cols-12 items-end"><h2 class="lg:col-span-8 font-display text-[clamp(2rem,5vw,4rem)] font-semibold leading-[1.02] tracking-[-0.02em] text-balance">Come hang out in our Discord.<!-- --> <span class="text-muted-foreground">Share strategies, send memes, watch us break our own game in real-time.</span></h2><div class="lg:col-span-4 flex lg:justify-end"><a href="https://discord.gg/phYj8yzg68" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 rounded-full bg-coral px-6 py-3 text-sm font-medium text-primary-foreground hover:-translate-y-0.5 transition-transform">Join the Discord <svg viewBox="0 0 24 24" fill="none" class="size-4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a></div></div></div></section></main><footer id="contact" class="mx-auto max-w-[1320px] px-6 py-16 lg:px-10 lg:py-20"><div class="grid gap-10 md:grid-cols-12"><div class="md:col-span-5"><a href="#top" aria-label="Mezumo — home" class="group inline-flex items-center gap-2 text-foreground "><img src="/__l5e/assets-v1/d5eb544a-a1a7-470c-ae98-36898bb63b27/mezumo-mark.png" alt="" aria-hidden="true" class="h-7 w-auto shrink-0"/><span class="font-display text-[1.05rem] font-bold uppercase tracking-[0.18em] leading-none">Mezumo</span></a><p class="mt-6 max-w-sm text-sm text-muted-foreground">A small indie game studio from Kraków, Poland. We make games we&#x27;d want to play.</p><a href="mailto:contact@mezumo.com" class="mt-8 inline-block font-display text-2xl tracking-tight underline decoration-coral decoration-2 underline-offset-4 hover:text-coral">contact@mezumo.com</a></div><div class="md:col-span-3"><span class="eyebrow">Studio</span><address class="mt-3 not-italic text-sm leading-relaxed text-muted-foreground">MEZUMO Sp. z o. o.<br/>Mogilska 43<br/>31-545 Kraków<br/>Poland (PL)<br/><span class="text-xs">NIP: 6783207334</span></address></div><div class="md:col-span-4"><span class="eyebrow">Find us</span><ul class="mt-3 space-y-2 text-sm"><li><a href="https://discord.gg/phYj8yzg68" target="_blank" rel="noreferrer" class="group inline-flex items-center gap-2 text-foreground hover:text-coral">Discord<svg viewBox="0 0 24 24" fill="none" class="size-3 opacity-50 transition-all group-hover:translate-x-0.5 group-hover:opacity-100" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a></li><li><a href="https://twitter.com/MezumoGames" target="_blank" rel="noreferrer" class="group inline-flex items-center gap-2 text-foreground hover:text-coral">Twitter / X<svg viewBox="0 0 24 24" fill="none" class="size-3 opacity-50 transition-all group-hover:translate-x-0.5 group-hover:opacity-100" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a></li><li><a href="https://www.tiktok.com/@mezumogames" target="_blank" rel="noreferrer" class="group inline-flex items-center gap-2 text-foreground hover:text-coral">TikTok<svg viewBox="0 0 24 24" fill="none" class="size-3 opacity-50 transition-all group-hover:translate-x-0.5 group-hover:opacity-100" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a></li><li><a href="https://store.steampowered.com/app/2366290/Ants_in_Space/" target="_blank" rel="noreferrer" class="group inline-flex items-center gap-2 text-foreground hover:text-coral">Steam - Ants in Space<svg viewBox="0 0 24 24" fill="none" class="size-3 opacity-50 transition-all group-hover:translate-x-0.5 group-hover:opacity-100" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a></li></ul></div></div><div class="mt-16 flex flex-wrap items-center justify-between gap-4 border-t border-border pt-6 text-xs text-muted-foreground"><span>© <!-- -->2026<!-- --> Mezumo Sp. z o. o.</span><span class="eyebrow">We make it for fun</span></div></footer></div><script>(function(a,f){let l;try{l=JSON.parse(sessionStorage.getItem(a)||"{}")}catch{return}const n=l?.[f||history.state?.__TSR_key];let c=!1;for(const t in n){const e=n[t],o=e?.scrollX,s=e?.scrollY;if(Number.isFinite(o)&&Number.isFinite(s)){if(t==="window")scrollTo(o,s),c=!0;else if(t)try{const r=document.querySelector(t);r&&(r.scrollLeft=o,r.scrollTop=s)}catch{}}}if(c)return;const i=location.hash.slice(1);if(i){const t=history.state?.__hashScrollIntoViewOptions??!0;if(t){const e=document.getElementById(i);e&&e.scrollIntoView(t)}return}scrollTo(0,0)})("tsr-scroll-restoration-v1_3");document.currentScript.remove()</script><!--/$--><script class="$tsr" id="$tsr-stream-barrier">(self.$R=self.$R||{})["tsr"]=[];self.$_TSR={h(){this.hydrated=!0,this.c()},e(){this.streamEnded=!0,this.c()},c(){this.hydrated&&this.streamEnded&&(delete self.$_TSR,delete self.$R.tsr)},p(e){this.initialized?e():this.buffer.push(e)},buffer:[]};$_TSR.router=($R=>$R[0]={manifest:$R[1]={routes:$R[2]={__root__:$R[3]={preloads:$R[4]=["/assets/index-C9MrMpp5.js"],scripts:$R[5]=[$R[6]={attrs:$R[7]={type:"module",async:!0,src:"/assets/index-C9MrMpp5.js"}}]},"/":$R[8]={preloads:$R[9]=["/assets/routes-B0rNLtSh.js"]}}},matches:$R[10]=[$R[11]={i:"__root__ ",u:1782895305966,s:"success",ssr:!0},$R[12]={i:"  ",u:1782895305966,s:"success",ssr:!0}],lastMatchId:"  "})($R["tsr"]);$_TSR.e();document.currentScript.remove()</script><script type="module" async="" src="/assets/index-C9MrMpp5.js"></script>
+<aside
+	id="lovable-badge"
+	role="complementary"
+	dir="ltr"
+	lang="en"
+	aria-label="Edit with Lovable">
+	<a
+		id="lovable-badge-cta" 
+		target="_blank" 
+		href="https://lovable.dev/projects/83768b6d-4646-47e5-a356-cf32b6fafcaf?utm_source=lovable-badge"
+		rel="noopener nofollow"
+		aria-label="Edit with Lovable">
+		<span id="lovable-badge-text">Edit with</span>
+		<svg xmlns="http://www.w3.org/2000/svg" width="52" height="16" fill="none" viewBox="0 0 52 16">
+  <path fill="#FCFBF8" fill-rule="evenodd" d="M20.318 5.25c.643 0 1.206.14 1.69.418a2.81 2.81 0 0 1 1.118 1.191c.266.513.4 1.115.4 1.807s-.134 1.296-.4 1.812a2.81 2.81 0 0 1-1.118 1.193c-.484.278-1.047.418-1.69.418s-1.208-.14-1.695-.418a2.85 2.85 0 0 1-1.125-1.193c-.262-.516-.393-1.12-.393-1.812s.131-1.294.393-1.807a2.848 2.848 0 0 1 1.125-1.191c.487-.279 1.052-.418 1.695-.418Zm0 1.425c-.27 0-.504.076-.7.228-.193.147-.34.37-.443.67-.102.295-.153.66-.153 1.093 0 .435.05.801.153 1.1.102.3.25.524.443.676.196.147.43.22.7.22.27 0 .502-.073.694-.22.193-.152.341-.375.443-.67.103-.299.153-.667.153-1.106 0-.65-.112-1.145-.337-1.481a1.08 1.08 0 0 0-.953-.51ZM32.7 5.25c.61 0 1.127.1 1.549.3.422.197.74.48.953.849.217.368.325.809.325 1.32v2.704c0 .29.02.562.062.812.044.245.108.4.19.466V12h-1.935a5.895 5.895 0 0 1-.105-.684 7.745 7.745 0 0 1-.02-.228 2.293 2.293 0 0 1-.151.203c-.205.242-.47.437-.793.584-.32.143-.685.215-1.094.215-.406 0-.77-.08-1.094-.24a1.845 1.845 0 0 1-.756-.682 1.984 1.984 0 0 1-.27-1.045c0-.606.178-1.069.535-1.388.356-.324.87-.534 1.542-.633l1.125-.16c.225-.032.403-.074.534-.123a.622.622 0 0 0 .288-.196.549.549 0 0 0 .093-.327.65.65 0 0 0-.11-.367.702.702 0 0 0-.32-.27c-.14-.07-.31-.105-.51-.105-.32 0-.576.083-.768.251-.193.164-.298.39-.314.676h-1.923c.016-.434.147-.82.393-1.155.25-.34.596-.604 1.039-.792.442-.189.954-.283 1.535-.283Zm.99 3.498a.98.98 0 0 1-.215.14 2.49 2.49 0 0 1-.584.178l-.473.092c-.315.061-.553.156-.713.283-.155.127-.233.305-.233.534 0 .23.084.412.252.547.168.135.383.203.645.203s.494-.058.694-.173c.201-.118.355-.282.461-.49.11-.21.166-.448.166-.714v-.6Zm4.526-2.375c.065-.125.138-.243.221-.349.197-.25.437-.44.719-.571.282-.135.6-.203.952-.203.528 0 .988.138 1.377.412.389.275.688.67.896 1.186.21.512.314 1.12.314 1.824 0 .7-.107 1.309-.32 1.825-.213.512-.518.906-.915 1.18-.393.275-.854.412-1.383.412-.352 0-.667-.062-.946-.184a1.832 1.832 0 0 1-.7-.554 2.2 2.2 0 0 1-.234-.383V12h-1.843V3h1.862v3.373Zm1.284.296c-.274 0-.51.085-.707.253-.192.163-.338.397-.436.7a3.376 3.376 0 0 0-.148 1.05c0 .406.05.759.148 1.058.098.299.243.53.436.694.197.164.433.246.707.246.279 0 .512-.082.7-.246.193-.164.336-.395.43-.694.099-.3.148-.652.148-1.058 0-.405-.05-.757-.147-1.056-.095-.299-.238-.53-.43-.694a1.015 1.015 0 0 0-.7-.253Zm9.416-1.419c.602 0 1.136.131 1.604.393.466.262.829.643 1.086 1.143.263.5.394 1.097.394 1.794 0 .25-.002.449-.006.596H47.51c.018.288.071.538.164.75a1.3 1.3 0 0 0 .491.596c.214.13.465.196.757.196.319 0 .583-.082.792-.246.209-.167.34-.403.393-.706h1.862a2.48 2.48 0 0 1-.485 1.235 2.54 2.54 0 0 1-1.051.805c-.439.188-.949.283-1.53.283-.655 0-1.225-.125-1.708-.375a2.672 2.672 0 0 1-1.13-1.143c-.267-.508-.4-1.137-.4-1.887 0-.712.14-1.327.418-1.843a2.86 2.86 0 0 1 1.155-1.186c.491-.27 1.051-.405 1.678-.405Zm-.044 1.345c-.274 0-.516.068-.725.203a1.29 1.29 0 0 0-.479.59 2.045 2.045 0 0 0-.132.498h2.562a1.873 1.873 0 0 0-.138-.602 1.061 1.061 0 0 0-.418-.516 1.243 1.243 0 0 0-.67-.173Z" clip-rule="evenodd"/>
+  <path fill="#FCFBF8" d="m26.605 9.995 1.342-4.566h1.924L27.628 12h-2.07l-2.33-6.57h1.98l1.397 4.565Zm-13.013.143h2.256c1.632 0 1.421 1.837 1.418 1.861h-5.603V3h1.93v7.138Zm31.516 1.861h-1.862V3h1.862v8.999Z"/>
+  <path fill="url(#a)" fill-rule="evenodd" d="M2.7 3c1.492 0 2.7 1.192 2.7 2.663v1.012h.9c1.49 0 2.7 1.192 2.7 2.662S7.791 12 6.3 12H0V5.663C0 4.193 1.209 3 2.7 3Z" clip-rule="evenodd"/>
+  <defs>
+    <radialGradient id="a" cx="0" cy="0" r="1" gradientTransform="matrix(-1.54236 7.07838 -10.231 -2.15602 4.627 5.022)" gradientUnits="userSpaceOnUse">
+      <stop offset=".106" stop-color="#FE7B02"/>
+      <stop offset=".394" stop-color="#FE3F21"/>
+      <stop offset=".608" stop-color="#F858BC"/>
+      <stop offset=".929" stop-color="#575ECF"/>
+    </radialGradient>
+  </defs>
+</svg>
+
+
+	</a>
+	
+	<span id="lovable-badge-divider" aria-hidden="true"></span>
+	
+	<button 
+		id="lovable-badge-close"
+		aria-label="Dismiss"
+		title="Dismiss"
+		type="button">
+		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" aria-hidden="true">
+			<path d="M10.646 4.646a.5.5 0 1 1 .707.708L8.707 8l2.646 2.646a.5.5 0 1 1-.707.707L8 8.707l-2.646 2.646a.5.5 0 1 1-.708-.707L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708L8 7.293l2.646-2.647Z"/>
+		</svg>
+	</button>
+</aside>
+<script>
+	// Don't show the lovable-badge if the page is in an iframe or if it's being rendered by puppeteer (screenshot service)
+	if (window.self !== window.top || navigator.userAgent.includes('puppeteer')) {
+		var badge = document.getElementById('lovable-badge');
+		if (badge) {
+			badge.style.display = 'none';
+		}
+	}
+
+	// Add click event listener to close button with animation
+	var closeButton = document.getElementById('lovable-badge-close');
+	if (closeButton) {
+		closeButton.addEventListener('click', function(event) {
+			event.preventDefault();
+			event.stopPropagation();
+			var badge = document.getElementById('lovable-badge');
+			if (badge) {
+				badge.classList.add('closing');
+				setTimeout(function() {
+					if (badge) {
+						badge.style.display = 'none';
+					}
+				}, 240);
+			}
+		});
+	}
+</script>
+</body></html>

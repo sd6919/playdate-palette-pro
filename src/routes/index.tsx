@@ -302,12 +302,6 @@ function About() {
               >
                 Steam page <ArrowRight className="size-3.5" />
               </a>
-              <a
-                href="#videos"
-                className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm font-medium hover:bg-surface-2"
-              >
-                Watch gameplay
-              </a>
             </div>
           </div>
         </div>

@@ -65,6 +65,57 @@ function BackgroundShapes() {
   );
 }
 
+function StarField() {
+  // Deterministic pseudo-random stars so SSR/CSR match
+  const stars = (() => {
+    const arr: { x: number; y: number; s: number; o: number; d: number; t: number }[] = [];
+    let seed = 1337;
+    const rand = () => {
+      seed = (seed * 9301 + 49297) % 233280;
+      return seed / 233280;
+    };
+    for (let i = 0; i < 220; i++) {
+      arr.push({
+        x: rand() * 100,
+        y: rand() * 100,
+        s: rand() * 1.6 + 0.4,
+        o: rand() * 0.6 + 0.2,
+        d: rand() * 4 + 2,
+        t: rand() * 5,
+      });
+    }
+    return arr;
+  })();
+
+  return (
+    <div
+      aria-hidden="true"
+      className="pointer-events-none fixed inset-0 overflow-hidden"
+      style={{ zIndex: 0, opacity: 0.35 }}
+    >
+      <style>{`@keyframes starTwinkle{0%,100%{opacity:var(--o,0.5)}50%{opacity:calc(var(--o,0.5) * 0.25)}}`}</style>
+      {stars.map((st, i) => (
+        <span
+          key={i}
+          style={{
+            position: "absolute",
+            left: `${st.x}%`,
+            top: `${st.y}%`,
+            width: `${st.s}px`,
+            height: `${st.s}px`,
+            borderRadius: "9999px",
+            background: "white",
+            boxShadow: "0 0 4px rgba(255,255,255,0.6)",
+            ["--o" as string]: st.o,
+            opacity: st.o,
+            animation: `starTwinkle ${st.d}s ease-in-out ${st.t}s infinite`,
+          }}
+        />
+      ))}
+    </div>
+  );
+}
+
 
 export const Route = createFileRoute("/")({
   head: () => ({

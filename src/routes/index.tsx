@@ -141,20 +141,8 @@ function Hero() {
                 Meet the ants
                 <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
               </a>
-              <a
-                href="#consulting"
-                className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-surface"
-              >
-                Hire us to consult
-              </a>
             </div>
 
-            {/* Studio stats */}
-            <dl className="mt-14 grid grid-cols-3 gap-6 border-t border-border pt-8 max-w-xl">
-              <Stat n="3" label="People in the studio" />
-              <Stat n="+40y" label="Combined Experience" />
-              <Stat n="+10" label="Shipped titles" />
-            </dl>
           </div>
 
           <div className="lg:col-span-5">

@@ -671,8 +671,6 @@ function Home() {
       <main>
         <Hero />
         <About />
-        <Game />
-        <Videos />
         <Team />
         <Consulting />
         <Community />

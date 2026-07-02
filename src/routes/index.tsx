@@ -695,36 +695,43 @@ function TikTokIcon({ className = "" }: { className?: string }) {
 function SteamIcon({ className = "" }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden>
-      <path d="M11.979 0C5.359 0 0 5.36 0 11.979c0 2.81.98 5.39 2.618 7.424L.734 22.68a.81.81 0 0 0 .996.996l3.277-1.884A11.95 11.95 0 0 0 11.979 24c6.619 0 11.979-5.36 11.979-11.979C23.958 5.36 18.598 0 11.979 0zm6.845 5.56a2.66 2.66 0 0 1 2.66 2.66c0 1.47-1.19 2.66-2.66 2.66-1.47 0-2.66-1.19-2.66-2.66 0-1.47 1.19-2.66 2.66-2.66zm-5.158 5.33c1.66 0 3.004 1.344 3.004 3.003 0 1.66-1.344 3.004-3.004 3.004l-2.58 1.48a.405.405 0 0 1-.497-.497l1.48-2.58c0-1.66 1.344-3.003 3.004-3.003h-.407zm-4.89 0c1.66 0 3.004 1.344 3.004 3.003 0 1.66-1.344 3.004-3.004 3.004-1.66 0-3.003-1.344-3.003-3.004 0-1.659 1.343-3.003 3.003-3.003z" />
+      <path d="M12 0C5.594 0 .337 4.997.03 11.324l6.446 2.665a3.4 3.4 0 0 1 1.906-.583c.06 0 .118.003.177.005l2.867-4.154v-.06a4.542 4.542 0 0 1 4.541-4.54 4.545 4.545 0 0 1 4.54 4.544 4.545 4.545 0 0 1-4.61 4.542L11.81 15.66c0 .05.003.1.003.15a3.416 3.416 0 0 1-3.417 3.416 3.42 3.42 0 0 1-3.337-2.66L.42 14.663C1.845 19.982 6.464 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zM7.53 18.212l-1.475-.61a2.575 2.575 0 0 0 1.343 1.264c1.303.543 2.808-.077 3.35-1.382a2.55 2.55 0 0 0 .002-1.958 2.53 2.53 0 0 0-1.386-1.379 2.56 2.56 0 0 0-1.918-.007l1.524.63a1.885 1.885 0 0 1 1.009 2.472 1.888 1.888 0 0 1-2.469 1.01zm11.089-9.113a3.028 3.028 0 0 0-3.024-3.023 3.03 3.03 0 0 0-3.027 3.023 3.03 3.03 0 0 0 3.027 3.025 3.028 3.028 0 0 0 3.024-3.025zm-5.294-.006a2.272 2.272 0 0 1 2.275-2.27 2.272 2.272 0 0 1 2.272 2.27 2.272 2.272 0 0 1-2.272 2.273 2.272 2.272 0 0 1-2.275-2.273z" />
     </svg>
   );
 }
 
 const SOCIALS = [
-  { href: "https://discord.gg/phYj8yzg68", label: "Discord", Icon: DiscordIcon },
-  { href: "https://twitter.com/MezumoGames", label: "Twitter / X", Icon: TwitterIcon },
-  { href: "https://www.tiktok.com/@mezumogames", label: "TikTok", Icon: TikTokIcon },
-  { href: "https://store.steampowered.com/app/2366290/Ants_in_Space/", label: "Steam", Icon: SteamIcon },
+  { href: "https://store.steampowered.com/app/2366290/Ants_in_Space/", label: "Steam", message: "WISHLIST ON STEAM", Icon: SteamIcon },
+  { href: "https://discord.gg/phYj8yzg68", label: "Discord", message: "JOIN OUR DISCORD", Icon: DiscordIcon },
+  { href: "https://twitter.com/MezumoGames", label: "Twitter / X", message: "FOLLOW US ON TWITTER", Icon: TwitterIcon },
+  { href: "https://www.tiktok.com/@mezumogames", label: "TikTok", message: "FOLLOW US ON TIKTOK", Icon: TikTokIcon },
 ];
 
 function SocialSidebar() {
   return (
-    <aside className="fixed right-4 top-1/2 z-40 -translate-y-1/2 hidden md:flex flex-col gap-3">
-      {SOCIALS.map(({ href, label, Icon }) => (
+    <aside className="fixed right-4 top-1/2 z-40 -translate-y-1/2 hidden md:flex flex-col gap-3 items-end">
+      {SOCIALS.map(({ href, label, message, Icon }) => (
         <a
           key={label}
           href={href}
           target="_blank"
           rel="noreferrer"
           aria-label={label}
-          className="group grid size-11 place-items-center rounded-xl bg-coral text-primary-foreground shadow-lg shadow-coral/20 transition-all duration-200 hover:scale-110 hover:shadow-coral/40 hover:-translate-x-1"
+          style={{ backgroundColor: "#ee216c" }}
+          className="group relative flex h-11 w-11 hover:w-56 items-center overflow-hidden rounded-xl text-primary-foreground shadow-lg shadow-[#ee216c]/20 transition-[width,box-shadow] duration-300 ease-out hover:shadow-[#ee216c]/50"
         >
-          <Icon className="size-5 transition-transform duration-200 group-hover:scale-110" />
+          <span className="absolute right-0 top-0 grid h-11 w-11 place-items-center transition-transform duration-300 ease-out group-hover:-translate-x-[calc(14rem-2.75rem)]">
+            <Icon className="size-5" />
+          </span>
+          <span className="pl-4 pr-12 text-[11px] font-semibold tracking-[0.18em] whitespace-nowrap opacity-0 -translate-x-2 transition-all duration-300 ease-out group-hover:opacity-100 group-hover:translate-x-0">
+            {message}
+          </span>
         </a>
       ))}
     </aside>
   );
 }
+
 
 function Home() {
   return (

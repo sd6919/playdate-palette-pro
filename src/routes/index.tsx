@@ -4,6 +4,7 @@ import heroAnt from "@/assets/hero-ants-in-space.png";
 import gameArt from "@/assets/ants-in-space-banner.png";
 import teamPhoto from "@/assets/team.png";
 import mezumoLogo from "@/assets/mezumo-mark.png";
+import mezumoLogoLetterAsset from "@/assets/mezumo_logo_letter.png.asset.json";
 import bgShapes from "@/assets/bg-shapes.png";
 
 function BackgroundShapes() {
@@ -153,15 +154,10 @@ function Logo({ className = "" }: { className?: string }) {
       className={`group inline-flex items-center gap-2 text-foreground ${className}`}
     >
       <img
-        src={mezumoLogo}
-        alt=""
-        aria-hidden="true"
-        className="h-7 w-auto shrink-0"
+        src={mezumoLogoLetterAsset.url}
+        alt="Mezumo"
+        className="h-8 w-auto shrink-0"
       />
-
-      <span className="font-display text-[1.05rem] font-bold uppercase tracking-[0.18em] leading-none">
-        Mezumo
-      </span>
     </a>
   );
 }

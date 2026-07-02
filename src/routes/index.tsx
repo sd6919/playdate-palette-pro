@@ -720,10 +720,10 @@ function SocialSidebar() {
           style={{ backgroundColor: "#ee216c" }}
           className="group relative flex h-11 w-11 hover:w-56 items-center overflow-hidden rounded-xl text-primary-foreground shadow-lg shadow-[#ee216c]/20 transition-[width,box-shadow] duration-300 ease-out hover:shadow-[#ee216c]/50"
         >
-          <span className="absolute right-0 top-0 grid h-11 w-11 place-items-center transition-transform duration-300 ease-out group-hover:-translate-x-[calc(14rem-2.75rem)]">
+          <span className="absolute right-0 top-0 grid h-11 w-11 place-items-center transition-transform duration-300 ease-out group-hover:-translate-x-[11.25rem]">
             <Icon className="size-5" />
           </span>
-          <span className="pl-4 pr-12 text-[11px] font-semibold tracking-[0.18em] whitespace-nowrap opacity-0 -translate-x-2 transition-all duration-300 ease-out group-hover:opacity-100 group-hover:translate-x-0">
+          <span className="pl-12 pr-4 text-[11px] font-semibold tracking-[0.18em] whitespace-nowrap opacity-0 -translate-x-2 transition-all duration-300 ease-out group-hover:opacity-100 group-hover:translate-x-0">
             {message}
           </span>
         </a>

@@ -43,8 +43,7 @@ function BackgroundShapes() {
         <img
           src={bgShapes}
           alt=""
-          className="absolute inset-y-0 left-0 h-full w-[100vw] max-w-none origin-left scale-[0.5] -translate-x-[8vw] object-cover object-left md:translate-x-0 md:scale-100"
-          style={{ clipPath: "inset(0 50% 0 0)" }}
+          className="absolute inset-y-0 left-0 h-full w-[100vw] max-w-none origin-left scale-[0.5] -translate-x-[3vw] object-cover object-left [clip-path:none] md:translate-x-0 md:scale-100 md:[clip-path:inset(0_50%_0_0)]"
         />
       </div>
       <div
@@ -58,8 +57,7 @@ function BackgroundShapes() {
         <img
           src={bgShapes}
           alt=""
-          className="absolute inset-y-0 right-0 h-full w-[100vw] max-w-none origin-right scale-[0.5] translate-x-[8vw] object-cover object-right md:translate-x-0 md:scale-100"
-          style={{ clipPath: "inset(0 0 0 50%)" }}
+          className="absolute inset-y-0 right-0 h-full w-[100vw] max-w-none origin-right scale-[0.5] translate-x-[3vw] object-cover object-right [clip-path:none] md:translate-x-0 md:scale-100 md:[clip-path:inset(0_0_0_50%)]"
         />
       </div>
     </div>

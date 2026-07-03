@@ -25,7 +25,7 @@ function BackgroundShapes() {
   return (
     <div
       aria-hidden="true"
-      className="pointer-events-none fixed inset-0 z-0 hidden overflow-hidden md:block"
+      className="pointer-events-none fixed inset-0 z-0 overflow-hidden"
       style={{ opacity: 0.35 * fade + 0.05 }}
     >
       <style>{`
@@ -43,7 +43,7 @@ function BackgroundShapes() {
         <img
           src={bgShapes}
           alt=""
-          className="absolute inset-y-0 left-0 h-full w-[100vw] max-w-none object-cover object-left"
+          className="absolute inset-y-0 left-0 h-full w-[100vw] max-w-none origin-left scale-[0.5] -translate-x-[8vw] object-cover object-left md:translate-x-0 md:scale-100"
           style={{ clipPath: "inset(0 50% 0 0)" }}
         />
       </div>
@@ -58,7 +58,7 @@ function BackgroundShapes() {
         <img
           src={bgShapes}
           alt=""
-          className="absolute inset-y-0 right-0 h-full w-[100vw] max-w-none object-cover object-right"
+          className="absolute inset-y-0 right-0 h-full w-[100vw] max-w-none origin-right scale-[0.5] translate-x-[8vw] object-cover object-right md:translate-x-0 md:scale-100"
           style={{ clipPath: "inset(0 0 0 50%)" }}
         />
       </div>

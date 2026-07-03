@@ -154,7 +154,7 @@ function Logo({ className = "" }: { className?: string }) {
       className={`group inline-flex items-center gap-2 text-foreground ${className}`}
     >
       <img
-        src={mezumoLogoLetterAsset.url}
+        src={mezumoLogoLetter}
         alt="Mezumo"
         className="h-8 w-auto shrink-0"
       />

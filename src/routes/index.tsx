@@ -25,7 +25,7 @@ function BackgroundShapes() {
   return (
     <div
       aria-hidden="true"
-      className="pointer-events-none fixed inset-0 z-0 hidden overflow-hidden md:block"
+      className="pointer-events-none fixed inset-0 z-0 overflow-hidden"
       style={{ opacity: 0.35 * fade + 0.05 }}
     >
       <style>{`
@@ -33,7 +33,7 @@ function BackgroundShapes() {
         @keyframes bgFloatR { 0%,100%{transform:translate3d(var(--sx,0),0,0)} 50%{transform:translate3d(var(--sx,0),12px,0)} }
       `}</style>
       <div
-        className="absolute inset-y-0 left-0 w-1/2"
+        className="absolute inset-y-0 left-0 w-1/2 origin-left scale-[0.55] -translate-x-[10vw] md:translate-x-0 md:scale-100"
         style={{
           ["--sx" as string]: `-${shift}vw`,
           animation: "bgFloatL 7s ease-in-out infinite",
@@ -48,7 +48,7 @@ function BackgroundShapes() {
         />
       </div>
       <div
-        className="absolute inset-y-0 right-0 w-1/2"
+        className="absolute inset-y-0 right-0 w-1/2 origin-right scale-[0.55] translate-x-[10vw] md:translate-x-0 md:scale-100"
         style={{
           ["--sx" as string]: `${shift}vw`,
           animation: "bgFloatR 8s ease-in-out infinite",

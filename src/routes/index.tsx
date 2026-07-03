@@ -25,7 +25,7 @@ function BackgroundShapes() {
   return (
     <div
       aria-hidden="true"
-      className="pointer-events-none fixed inset-0 z-0 overflow-hidden"
+      className="pointer-events-none fixed inset-0 z-0 hidden overflow-hidden md:block"
       style={{ opacity: 0.35 * fade + 0.05 }}
     >
       <style>{`

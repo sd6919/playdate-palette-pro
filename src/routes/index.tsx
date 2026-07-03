@@ -4,7 +4,7 @@ import heroAnt from "@/assets/hero-ants-in-space.png";
 import gameArt from "@/assets/ants-in-space-banner.png";
 import teamPhoto from "@/assets/team.png";
 import mezumoLogo from "@/assets/mezumo-mark.png";
-import mezumoLogoLetterAsset from "@/assets/mezumo_logo_letter.png.asset.json";
+import mezumoLogoLetter from "@/assets/mezumo-logo-letter.png";
 import bgShapes from "@/assets/bg-shapes.png";
 
 function BackgroundShapes() {

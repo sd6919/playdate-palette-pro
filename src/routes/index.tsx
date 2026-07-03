@@ -4,7 +4,7 @@ import heroAnt from "@/assets/hero-ants-in-space.png";
 import gameArt from "@/assets/ants-in-space-banner.png";
 import teamPhoto from "@/assets/team.png";
 import mezumoLogo from "@/assets/mezumo-mark.png";
-import mezumoLogoLetterAsset from "@/assets/mezumo_logo_letter.png.asset.json";
+import mezumoLogoLetter from "@/assets/mezumo-logo-letter.png";
 import bgShapes from "@/assets/bg-shapes.png";
 
 function BackgroundShapes() {
@@ -25,7 +25,7 @@ function BackgroundShapes() {
   return (
     <div
       aria-hidden="true"
-      className="pointer-events-none fixed inset-0 z-0 overflow-hidden"
+      className="pointer-events-none fixed inset-0 z-0 hidden overflow-hidden md:block"
       style={{ opacity: 0.35 * fade + 0.05 }}
     >
       <style>{`
@@ -154,7 +154,7 @@ function Logo({ className = "" }: { className?: string }) {
       className={`group inline-flex items-center gap-2 text-foreground ${className}`}
     >
       <img
-        src={mezumoLogoLetterAsset.url}
+        src={mezumoLogoLetter}
         alt="Mezumo"
         className="h-8 w-auto shrink-0"
       />
@@ -705,26 +705,48 @@ const SOCIALS = [
 
 function SocialSidebar() {
   return (
-    <aside className="fixed right-4 top-1/2 z-40 -translate-y-1/2 hidden md:flex flex-col gap-3 items-end">
-      {SOCIALS.map(({ href, label, message, Icon }) => (
-        <a
-          key={label}
-          href={href}
-          target="_blank"
-          rel="noreferrer"
-          aria-label={label}
-          style={{ backgroundColor: "#ee216c" }}
-          className="group relative flex h-11 w-11 hover:w-56 items-center overflow-hidden rounded-xl text-primary-foreground shadow-lg shadow-[#ee216c]/20 transition-[width,box-shadow] duration-300 ease-out hover:shadow-[#ee216c]/50"
-        >
-          <span className="absolute right-0 top-0 grid h-11 w-11 place-items-center transition-transform duration-300 ease-out group-hover:-translate-x-[11.25rem]">
-            <Icon className="size-5" />
-          </span>
-          <span className="pl-12 pr-4 text-[11px] font-semibold tracking-[0.18em] whitespace-nowrap opacity-0 -translate-x-2 transition-all duration-300 ease-out group-hover:opacity-100 group-hover:translate-x-0">
-            {message}
-          </span>
-        </a>
-      ))}
-    </aside>
+    <>
+      {/* Desktop: vertical right-side rail with hover-expand labels */}
+      <aside className="fixed right-4 top-1/2 z-40 hidden -translate-y-1/2 flex-col items-end gap-3 md:flex">
+        {SOCIALS.map(({ href, label, message, Icon }) => (
+          <a
+            key={label}
+            href={href}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={label}
+            style={{ backgroundColor: "#ee216c" }}
+            className="group relative flex h-11 w-11 hover:w-56 items-center overflow-hidden rounded-xl text-primary-foreground shadow-lg shadow-[#ee216c]/20 transition-[width,box-shadow] duration-300 ease-out hover:shadow-[#ee216c]/50"
+          >
+            <span className="absolute right-0 top-0 grid h-11 w-11 place-items-center transition-transform duration-300 ease-out group-hover:-translate-x-[11.25rem]">
+              <Icon className="size-5" />
+            </span>
+            <span className="pl-12 pr-4 text-[11px] font-semibold tracking-[0.18em] whitespace-nowrap opacity-0 -translate-x-2 transition-all duration-300 ease-out group-hover:opacity-100 group-hover:translate-x-0">
+              {message}
+            </span>
+          </a>
+        ))}
+      </aside>
+
+      {/* Mobile: horizontal floating dock at bottom */}
+      <div className="fixed inset-x-0 bottom-4 z-40 flex justify-center px-4 md:hidden">
+        <div className="flex items-center gap-2 rounded-full border border-border bg-background/85 px-3 py-2 shadow-lg backdrop-blur-md">
+          {SOCIALS.map(({ href, label, Icon }) => (
+            <a
+              key={label}
+              href={href}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={label}
+              style={{ backgroundColor: "#ee216c" }}
+              className="grid h-10 w-10 place-items-center rounded-full text-primary-foreground shadow-md shadow-[#ee216c]/30 transition-transform active:scale-95"
+            >
+              <Icon className="size-4" />
+            </a>
+          ))}
+        </div>
+      </div>
+    </>
   );
 }
 

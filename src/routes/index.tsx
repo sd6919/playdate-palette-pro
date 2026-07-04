@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import heroAnt from "@/assets/hero-ants-in-space.png";
 import gameArt from "@/assets/ants-in-space-banner.png";
 import teamPhoto from "@/assets/team.png";
-const mezumoLogoLetter = "/mezumo-logo-letter.png";
+import mezumoLogoLetter from "@/assets/mezumo-logo-letter.png?inline";
 import bgShapes from "@/assets/bg-shapes.png";
 
 function BackgroundShapes() {
